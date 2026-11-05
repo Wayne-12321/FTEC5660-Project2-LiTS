@@ -1,0 +1,49 @@
+FTEC5660 Project 2 - presentation script
+WEI ZIJUN | target 10-12 minutes; hard course limit 15 minutes
+Use the eight-page PDF as the screen-sharing material. Rehearse once and shorten as needed.
+This is a script, not a completed Zoom recording. Do not show .env or API-account credentials.
+
+0:00-0:50 | Page 1 | Question and scope
+Hello, I am Wei Zijun. This project is a partial reproduction of LiTS on BlocksWorld, followed by a small search modification. My main question is whether closing ancestor-state cycles reduces resource use, and whether it also improves planning success. The short answer is that calls and estimated cost decrease in all three repetitions, but the accuracy difference changes sign. I will distinguish what I reproduced from the paper's original benchmark, and I will include the unsuccessful candidate-widening pilot rather than claiming that every modification worked.
+
+0:50-2:00 | Page 2 | What was and was not reproduced
+The authors provide a modular framework with policy, transition and reward components. Their BlocksWorld table reports 66.7 percent accuracy on 30 examples, using Claude 3.5 Sonnet and ten MCTS iterations. I did not reproduce that number under the same conditions. I used DeepSeek Flash, a fixed twenty-task subset and three iterations to keep the experiment affordable. The exact paper task identities were not established, and my pinned repository snapshot is later than the paper version. Consequently the published accuracy and US-dollar cost are reference context, not a directly comparable baseline.
+What I did reproduce is the runnable multi-step planning and artifact workflow: the author task loader and components, real model calls, saved search trees and terminal nodes, and offline evaluation. Valid six-action solutions were observed. External registered subclasses also worked while the tracked upstream source remained unchanged.
+
+2:00-3:15 | Page 3 | Data, model and evaluation
+The bundled source has 114 records. I selected the first two for development and the next twenty for the test subset, preserving the original order. Data and PDDL hashes record exactly which examples were used. The same twenty examples were repeated three times in each arm. That gives sixty task-run observations per arm, but only twenty distinct task identities.
+Both arms use the same model, branching factor three, maximum depth six, rollout limit six and one rollout candidate at each step. Local random seed forty-two is kept fixed, but I do not send a provider seed. Remote sampling can therefore vary. Thinking and automatic SDK retries are disabled. Each task has a request and returned-token limit, plus a process timeout. The ledger records actual returned usage and cache hits.
+The main success metric independently replays every action from the original initial state. It checks the four operator preconditions and all final goals. A model saying it has succeeded, or merely reaching the depth limit, is not enough. Costs are estimates from actual usage and a recorded price snapshot; I did not verify the platform bill.
+
+3:15-4:20 | Page 4 | The isolated modification
+Before the main experiment I had to repair finite-action duplication and exhausted-frontier behavior. Those common repairs are shared by both arms. I call this the engineering-fixed control, not the untouched paper baseline.
+The treatment adds one rule. After the model produces a state, I normalize the block positions and check whether that state already appears among this node's ancestors. If the state is complete, consistent and repeats an ancestor, I close that branch. I retain the node for audit and do not label it as a goal. Ambiguous or inconsistent states are kept rather than pruned.
+This is not a symbolic transition model or a hidden planner. I compare states already produced by the LLM. The treatment does not change reward backup, merge separate branches or grant extra recovery attempts. This last point is important: a cycle can end a rollout early while still consuming one of the three iterations. Equal maximum limits do not mean equal realized computation.
+
+4:20-6:05 | Page 5 | Main results
+The control solves seven, seven and ten out of twenty tasks across the three rounds. The pruned arm solves eight, nine and eight. Its paired success differences are therefore plus one, plus two and minus two. Across repeated observations that is twenty-four versus twenty-five successes out of sixty, or forty versus about forty-one point seven percent.
+The resource result is clearer within this subset. Calls drop in every round: thirty-six point six percent, thirty-seven point four percent and twenty-nine point seven percent. Total calls decline from three thousand three hundred thirty-three to two thousand one hundred seventy-six. Returned tokens decline by thirty-three point nine percent, and the estimated fee reduction is thirty-four point one percent.
+I report the round means and sample standard deviations, but I do not treat these sixty observations as sixty independent examples. The apparently smaller accuracy standard deviation in the pruned arm does not prove task-wise reliability: both arms have six tasks that always succeed, nine that always fail and five with mixed results. The appropriate conclusion is repeated resource reduction on this test subset, without a stable accuracy improvement.
+
+6:05-7:40 | Page 6 | Why did round three get worse?
+I inspected the three cases where control succeeds and pruning fails. The eight recorded cuts are genuine cycles, and the saved modeled positions match independent rule replay. I did not find a control solution directly deleted by the equality rule.
+The bottleneck is often the only rollout candidate. Three failing paths reach a useful depth-four state, from which two more actions would solve the task. However, the correct next action is not generated at that state. A zero-scored reverse action is executed because it is the only option. In two cases the arms produce different actions for the same prompt before the first pruning event, so the comparison does not isolate pruning from model sampling.
+There is also a backup issue in instance sixty-nine. A short no-progress loop leaves one root branch with a positive Q value of zero point two five, higher than the useful branch's zero point one five. UCT then sends the final attempt back to the worse branch. Closing a cyclic node is not equivalent to assigning an appropriate failure value to the rollout. These findings suggest future bounded recovery and cycle-aware backup, but I did not silently combine them with the measured treatment.
+
+7:40-8:55 | Page 7 | Low-score candidate widening
+I tested one small follow-up version only on the two development tasks. If a node has exactly one total candidate, that candidate is open and scored at or below zero, and other legal actions exist, it adds one alternative. This may happen once per node and at most twice per task. The original low-scored action is retained because some necessary actions also score zero. Existing argmax and backup rules remain unchanged.
+The offline regressions and CLI dry runs passed. In the paid pilot both arms solve one out of two. Widening triggers twice, but both added actions score zero and neither is explored in the final tree. Direct generation and scoring cost five extra requests. Whole-run calls happen to decrease from eighty-six to sixty-eight, but I cannot attribute that difference to beneficial use of new candidates: they were not explored, and the sampled paths differ. This is a negative effectiveness result with a functioning, bounded implementation.
+
+8:55-10:05 | Page 8 / terminal | Reproducibility evidence
+The accompanying package contains pinned scripts and configs, task hashes, real request ledgers, saved trees and independent terminal-plan checks. The main report can be recomputed offline with cycle_repeat_report.py. The error audit and low-score report also use only supplied files. For a short live demonstration I would show an existing summary and run a network-disabled regression, not buy new API calls during the recording.
+The setup recipe fetches the author checkout at a fixed commit. I disclose that a fresh-machine installation has not been verified; I did verify re-evaluation of the curated package using the existing environment. No key, virtual environment or nested upstream Git repository is in the package. Local preparation commits group source changes and generated evidence for review; they are not invented historical experiment commits.
+
+10:05-11:00 | Page 8 | Lessons and conclusion
+Three lessons stand out. First, terminal text and independent action validity are different claims. Second, a cost-saving stopping rule can also reduce exploration, so realized computation must be measured. Third, adding a candidate does not guarantee it will be selected: scoring and tie-breaking remain important.
+My overall conclusion is a partial workflow reproduction under explicit model and budget departures. Ancestor-cycle pruning consistently reduces calls on these tasks, while accuracy benefits remain uncertain. The next research step would separate candidate selection, bounded recovery and failure backup into individual ablations, validated on development tasks and a fresh holdout. Thank you.
+
+Recording checklist
+- Start a Zoom recording, share the report and optionally the local terminal.
+- Read the numbers from the verified report; do not substitute the paper's metric for your own.
+- Keep the recording below 15 minutes and check the full audio/video once.
+- Upload to a location accessible to the instructor; check link permissions and supply the real link.

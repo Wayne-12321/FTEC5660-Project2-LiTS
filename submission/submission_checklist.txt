@@ -1,0 +1,27 @@
+FTEC5660 Project 2 submission checklist - 5 November 2026
+Student: WEI ZIJUN, 1155244573
+Deadline stated in the assignment: 13 November, midnight.
+
+READY LOCALLY
+[done] English formal report, 8 pages, identity filled.
+[done] Published target/settings checked against LiTS v2 Section 3.1/Table 3.
+[done] Replacement model, engineering control and unmatched sample IDs explicitly disclosed.
+[done] Three real repeated tests and mean/sample SD; no unsupported accuracy claim.
+[done] Failure diary and negative widening pilot included.
+[done] GitHub-ready curated source/evidence copy and English setup/run README.
+[done] API credentials, local environment, caches and upstream nested Git excluded.
+[done] Timed English recording script, target 10-12 minutes.
+
+REQUIRES LIVE SUBMISSION ACTION
+[ ] Publish the prepared student repository and obtain its accessible GitHub URL.
+    Account found in this project's other chats: Wayne-12321.
+    Existing public repos FTEC5660 and FTEC5660-HW2 are previous assignments, not Project 2.
+    Proposed new repo name: FTEC5660-Project2-LiTS (not created or published).
+[ ] Make and review an actual Zoom recording, at most 15 minutes.
+[ ] Upload the recording and check the instructor can open the link.
+[ ] Submit the PDF, student repository link and recording link in the required course portal.
+
+Do not submit the author's upstream URL as if it were your student repository.
+Do not submit an invented repository/recording link or a script in place of the actual recording.
+Do not interpret repeated observations of the same 20 tasks as 60 independent samples.
+The course's required links, not just a ZIP, must be supplied.

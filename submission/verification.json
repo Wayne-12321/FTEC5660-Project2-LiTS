@@ -1,0 +1,52 @@
+{
+  "prepared": "2026-11-05",
+  "author": "WEI ZIJUN",
+  "student_id": "1155244573",
+  "model_api_calls_during_preparation": 0,
+  "original_runtime_source_config_data_files_compared_byte_for_byte": 38,
+  "checks_passed_in_curated_copy_using_existing_environment": [
+    "check_api_guard.py",
+    "check_search_fixes.py",
+    "check_cycle_pruning.py",
+    "check_low_score.py (9 groups)",
+    "cycle_repeat_report.py (120 planned task-runs)",
+    "analyze_cycle_losses.py (3 cases; 8 real cycles; 0 replay errors)",
+    "low_score_report.py (4 planned task-runs)"
+  ],
+  "main_successes_control": [
+    7,
+    7,
+    10
+  ],
+  "main_successes_pruned": [
+    8,
+    9,
+    8
+  ],
+  "main_calls_control": [
+    1137,
+    1147,
+    1049
+  ],
+  "main_calls_pruned": [
+    721,
+    718,
+    737
+  ],
+  "low_score_pilot_successes": [
+    1,
+    1
+  ],
+  "low_score_pilot_calls": [
+    86,
+    68
+  ],
+  "report_pages": 8,
+  "report_identity_fields_filled": true,
+  "limitations": [
+    "No fresh-machine dependency rebuild was performed.",
+    "Remote model snapshot cannot be frozen by local seeds.",
+    "Fees are snapshot-based estimates, not checked bills.",
+    "GitHub publication and actual Zoom recording are separate live submission actions."
+  ]
+}
