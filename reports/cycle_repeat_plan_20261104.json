@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-04",
+  "protocol_sha256": "d0b859e28a5072d7350c7d51e917a5a3eff3b10144a17f2f33520d0592b05015",
+  "rounds": [
+    "cycle_test_20261104",
+    "cycle_test_20261104_r2",
+    "cycle_test_20261104_r3"
+  ],
+  "additional_rounds": 2,
+  "split": "test",
+  "task_count_per_arm": 20,
+  "local_seed": 42,
+  "provider_seed_sent": false,
+  "workers_per_round": 4,
+  "rounds_run_sequentially": true,
+  "config_changes": false,
+  "task_changes": false,
+  "retry_or_response_reuse": false,
+  "per_task_limits": {
+    "max_api_calls_per_task": 150,
+    "max_total_tokens_per_task": 150000,
+    "timeout_seconds_per_task": 900
+  },
+  "analysis": "Report each round and mean/sample SD; reuse of the same 20 tasks is repeated measurement, not 60 independent test samples; no tuning or optional stopping based on intermediate accuracy."
+}

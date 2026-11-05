@@ -1,0 +1,2916 @@
+{
+  "split": "test",
+  "planned_paired_tasks": 20,
+  "pricing_verified_date": "2026-11-04",
+  "primary_metric": "Independent symbolic replay successes / all planned tasks; incomplete/missing are failures.",
+  "arms": {
+    "cycle_control_3": {
+      "variant": "cycle_control_3",
+      "summary": {
+        "variant": "cycle_control_3",
+        "fixture": false,
+        "planned_tasks": 20,
+        "completed_tasks": 20,
+        "upstream_success_rate": 0.35,
+        "symbolic_success_rate": 0.35,
+        "symbolic_success_std": null,
+        "repeat_symbolic_rates": [
+          0.35
+        ],
+        "input_tokens": 1227335,
+        "output_tokens": 16771,
+        "unaccounted_api_calls": 0,
+        "cost": null,
+        "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+      },
+      "cost": {
+        "model": "deepseek-flash",
+        "rate_date": "2026-11-04",
+        "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+        "completed_calls": 1147,
+        "unaccounted_calls": 0,
+        "cache_hit_input_tokens": 971736,
+        "cache_miss_input_tokens": 255599,
+        "input_tokens": 1227335,
+        "output_tokens": 16771,
+        "estimated_cny_off_peak": 0.34211772,
+        "estimated_cny_peak": 0.68423544,
+        "note": "Estimate for recorded successful calls only, not confirmed billing. Unknown requests may incur extra charges."
+      },
+      "status_counts": {
+        "completed": 20
+      },
+      "budget_interruptions": 0,
+      "independent_successes": 7,
+      "upstream_claimed_successes": 7,
+      "mean_task_elapsed_seconds": 52.567957987450065,
+      "sum_task_elapsed_seconds": 1051.3591597490013,
+      "elapsed_note": "Task times overlap when workers run concurrently; their sum is not batch wall time.",
+      "full_trees_available": 20,
+      "full_trees_missing": 0,
+      "modeled_nodes": 280,
+      "llm_state_ancestor_revisit_nodes": 82,
+      "ancestor_revisit_nodes_with_children": 58,
+      "tree_state_parse_failures": 0,
+      "cycle_audits_available": 0,
+      "pruned_nodes": 0,
+      "cycle_parse_failure_nodes": 0,
+      "invalid_root_audits": 0,
+      "tasks": [
+        {
+          "repeat": 0,
+          "task_id": "instance-15",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 49.4233277910389,
+          "input_tokens": 60842,
+          "output_tokens": 830,
+          "completed_api_calls": 55,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 14,
+            "unmodeled_nodes": 3,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 7,
+            "ancestor_revisit_nodes_with_children": 4,
+            "revisits": [
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 2
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 3
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 16,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-23",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 66.0265374998562,
+          "input_tokens": 75744,
+          "output_tokens": 1090,
+          "completed_api_calls": 71,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 18,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 5,
+            "ancestor_revisit_nodes_with_children": 3,
+            "revisits": [
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 18,
+                "ancestor_id": 16
+              },
+              {
+                "node_id": 19,
+                "ancestor_id": 17
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-32",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 61.5625940002501,
+          "input_tokens": 69040,
+          "output_tokens": 917,
+          "completed_api_calls": 64,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 14,
+            "unmodeled_nodes": 5,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 8,
+            "ancestor_revisit_nodes_with_children": 6,
+            "revisits": [
+              {
+                "node_id": 5,
+                "ancestor_id": 3
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 2
+              },
+              {
+                "node_id": 12,
+                "ancestor_id": 8
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-35",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 24.58475883398205,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-36",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 25.28912974987179,
+          "input_tokens": 27641,
+          "output_tokens": 380,
+          "completed_api_calls": 26,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-42",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 72.72964662499726,
+          "input_tokens": 87771,
+          "output_tokens": 1204,
+          "completed_api_calls": 82,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 19,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 9,
+            "ancestor_revisit_nodes_with_children": 7,
+            "revisits": [
+              {
+                "node_id": 12,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 9
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 15,
+                "ancestor_id": 13
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 2
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 16,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 21,
+                "ancestor_id": 19
+              },
+              {
+                "node_id": 22,
+                "ancestor_id": 20
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-48",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 20.729499416891485,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-56",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 75.01139049977064,
+          "input_tokens": 86562,
+          "output_tokens": 1210,
+          "completed_api_calls": 81,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 19,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 9,
+            "ancestor_revisit_nodes_with_children": 6,
+            "revisits": [
+              {
+                "node_id": 5,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 6
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 15,
+                "ancestor_id": 13
+              },
+              {
+                "node_id": 16,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 21,
+                "ancestor_id": 19
+              },
+              {
+                "node_id": 22,
+                "ancestor_id": 20
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-58",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 22.028547374997288,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-59",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 71.53555350005627,
+          "input_tokens": 87105,
+          "output_tokens": 1204,
+          "completed_api_calls": 82,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 19,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 10,
+            "ancestor_revisit_nodes_with_children": 7,
+            "revisits": [
+              {
+                "node_id": 12,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 9
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 15,
+                "ancestor_id": 13
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 6
+              },
+              {
+                "node_id": 16,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 21,
+                "ancestor_id": 19
+              },
+              {
+                "node_id": 22,
+                "ancestor_id": 20
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-63",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 72.23857762524858,
+          "input_tokens": 86951,
+          "output_tokens": 1110,
+          "completed_api_calls": 82,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 19,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 4,
+            "ancestor_revisit_nodes_with_children": 3,
+            "revisits": [
+              {
+                "node_id": 21,
+                "ancestor_id": 19
+              },
+              {
+                "node_id": 22,
+                "ancestor_id": 20
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-66",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 45.663605582900345,
+          "input_tokens": 55363,
+          "output_tokens": 749,
+          "completed_api_calls": 52,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 13,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 1,
+            "ancestor_revisit_nodes_with_children": 1,
+            "revisits": [
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-69",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 59.60036508273333,
+          "input_tokens": 75746,
+          "output_tokens": 1074,
+          "completed_api_calls": 71,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 18,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 2,
+            "revisits": [
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-73",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 73.25751533405855,
+          "input_tokens": 86362,
+          "output_tokens": 1128,
+          "completed_api_calls": 81,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 19,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 9,
+            "ancestor_revisit_nodes_with_children": 7,
+            "revisits": [
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 6
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 12,
+                "ancestor_id": 2
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 9
+              },
+              {
+                "node_id": 19,
+                "ancestor_id": 3
+              },
+              {
+                "node_id": 20,
+                "ancestor_id": 16
+              },
+              {
+                "node_id": 21,
+                "ancestor_id": 19
+              },
+              {
+                "node_id": 22,
+                "ancestor_id": 20
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-78",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 55.098648000042886,
+          "input_tokens": 65586,
+          "output_tokens": 865,
+          "completed_api_calls": 60,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 14,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 2,
+            "revisits": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-82",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 65.31256962521002,
+          "input_tokens": 75741,
+          "output_tokens": 1074,
+          "completed_api_calls": 71,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 18,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 4,
+            "ancestor_revisit_nodes_with_children": 3,
+            "revisits": [
+              {
+                "node_id": 15,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 12
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-86",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 24.904032791033387,
+          "input_tokens": 27452,
+          "output_tokens": 364,
+          "completed_api_calls": 26,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-89",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 54.36615337524563,
+          "input_tokens": 55462,
+          "output_tokens": 791,
+          "completed_api_calls": 52,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 13,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 4,
+            "ancestor_revisit_nodes_with_children": 3,
+            "revisits": [
+              {
+                "node_id": 4,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 3
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-90",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 56.54556791577488,
+          "input_tokens": 65656,
+          "output_tokens": 859,
+          "completed_api_calls": 61,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 14,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 2,
+            "revisits": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-112",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 55.451139125041664,
+          "input_tokens": 65630,
+          "output_tokens": 848,
+          "completed_api_calls": 61,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 14,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 2,
+            "revisits": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": false,
+            "pruned_nodes": 0,
+            "parse_failures": null
+          }
+        }
+      ]
+    },
+    "cycle_pruned_3": {
+      "variant": "cycle_pruned_3",
+      "summary": {
+        "variant": "cycle_pruned_3",
+        "fixture": false,
+        "planned_tasks": 20,
+        "completed_tasks": 20,
+        "upstream_success_rate": 0.45,
+        "symbolic_success_rate": 0.45,
+        "symbolic_success_std": null,
+        "repeat_symbolic_rates": [
+          0.45
+        ],
+        "input_tokens": 778257,
+        "output_tokens": 10046,
+        "unaccounted_api_calls": 0,
+        "cost": null,
+        "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+      },
+      "cost": {
+        "model": "deepseek-flash",
+        "rate_date": "2026-11-04",
+        "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+        "completed_calls": 718,
+        "unaccounted_calls": 0,
+        "cache_hit_input_tokens": 616666,
+        "cache_miss_input_tokens": 161591,
+        "input_tokens": 778257,
+        "output_tokens": 10046,
+        "estimated_cny_off_peak": 0.21410832,
+        "estimated_cny_peak": 0.42821664,
+        "note": "Estimate for recorded successful calls only, not confirmed billing. Unknown requests may incur extra charges."
+      },
+      "status_counts": {
+        "completed": 20
+      },
+      "budget_interruptions": 0,
+      "independent_successes": 9,
+      "upstream_claimed_successes": 9,
+      "mean_task_elapsed_seconds": 34.177424668800086,
+      "sum_task_elapsed_seconds": 683.5484933760017,
+      "elapsed_note": "Task times overlap when workers run concurrently; their sum is not batch wall time.",
+      "full_trees_available": 20,
+      "full_trees_missing": 0,
+      "modeled_nodes": 177,
+      "llm_state_ancestor_revisit_nodes": 38,
+      "ancestor_revisit_nodes_with_children": 0,
+      "tree_state_parse_failures": 0,
+      "cycle_audits_available": 20,
+      "pruned_nodes": 38,
+      "cycle_parse_failure_nodes": 0,
+      "invalid_root_audits": 0,
+      "tasks": [
+        {
+          "repeat": 0,
+          "task_id": "instance-15",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 33.60919079184532,
+          "input_tokens": 41926,
+          "output_tokens": 565,
+          "completed_api_calls": 38,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 10,
+                "ancestor_id": 8
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 2
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 4,
+                "ancestor_id": 2,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "yellow"
+                  ],
+                  [
+                    "orange",
+                    "blue"
+                  ],
+                  [
+                    "red",
+                    "hand"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 10,
+                "ancestor_id": 8,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "hand"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "yellow"
+                  ],
+                  [
+                    "orange",
+                    "blue"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-23",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 30.98655075021088,
+          "input_tokens": 35459,
+          "output_tokens": 493,
+          "completed_api_calls": 33,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 9,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 9,
+                "ancestor_id": 7
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 3,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "orange"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 7,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "hand"
+                  ]
+                ]
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "orange"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-32",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 44.618480542209,
+          "input_tokens": 48198,
+          "output_tokens": 588,
+          "completed_api_calls": 44,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 9,
+            "unmodeled_nodes": 5,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 5,
+                "ancestor_id": 3
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 5,
+                "ancestor_id": 3,
+                "depth": 4,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "blue"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 4,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "hand"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-35",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 24.046605083625764,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-36",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 24.315076916012913,
+          "input_tokens": 27641,
+          "output_tokens": 380,
+          "completed_api_calls": 26,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-42",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 36.58303733309731,
+          "input_tokens": 41442,
+          "output_tokens": 468,
+          "completed_api_calls": 38,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 8,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 8,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 4,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "red"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 1,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "hand"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "red"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-48",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 23.36489533400163,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-56",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 37.48743954207748,
+          "input_tokens": 40606,
+          "output_tokens": 463,
+          "completed_api_calls": 37,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 8,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 5,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 5,
+                "ancestor_id": 1,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "hand"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 6,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-58",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 25.4112498331815,
+          "input_tokens": 24227,
+          "output_tokens": 358,
+          "completed_api_calls": 23,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 0,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-59",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 34.616874292027205,
+          "input_tokens": 41096,
+          "output_tokens": 468,
+          "completed_api_calls": 38,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 8,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 8,
+                "ancestor_id": 1
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 4,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "red"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 1,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "hand"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "red"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-63",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 40.74256775015965,
+          "input_tokens": 49423,
+          "output_tokens": 574,
+          "completed_api_calls": 46,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 13,
+                "ancestor_id": 11
+              },
+              {
+                "node_id": 4,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 4,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "orange"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 5,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "orange"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 11,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "hand"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-66",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 40.83240175014362,
+          "input_tokens": 50754,
+          "output_tokens": 706,
+          "completed_api_calls": 47,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 12,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 9,
+                "ancestor_id": 7
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 10
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 3,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "yellow"
+                  ],
+                  [
+                    "red",
+                    "orange"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 7,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "hand"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 13,
+                "ancestor_id": 10,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "hand"
+                  ],
+                  [
+                    "red",
+                    "blue"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-69",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 32.445356875192374,
+          "input_tokens": 41926,
+          "output_tokens": 560,
+          "completed_api_calls": 38,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 9,
+                "ancestor_id": 7
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 2
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 3,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "yellow"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "blue"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 7,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "hand"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 2,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "yellow"
+                  ],
+                  [
+                    "orange",
+                    "hand"
+                  ],
+                  [
+                    "red",
+                    "blue"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-73",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 46.14184366585687,
+          "input_tokens": 53101,
+          "output_tokens": 643,
+          "completed_api_calls": 49,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 11,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 7,
+                "ancestor_id": 5
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 3
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 7,
+                "ancestor_id": 5,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "hand"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 8,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "orange"
+                  ]
+                ]
+              },
+              {
+                "node_id": 14,
+                "ancestor_id": 3,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "hand"
+                  ],
+                  [
+                    "yellow",
+                    "orange"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-78",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 39.58793037477881,
+          "input_tokens": 45495,
+          "output_tokens": 582,
+          "completed_api_calls": 41,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 3,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 2,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 2,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "red"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "hand"
+                  ]
+                ]
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "yellow"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "blue"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-82",
+          "status": "completed",
+          "upstream_success": false,
+          "symbolic_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 36.70538220787421,
+          "input_tokens": 41926,
+          "output_tokens": 560,
+          "completed_api_calls": 38,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 3,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 9,
+                "ancestor_id": 7
+              },
+              {
+                "node_id": 3,
+                "ancestor_id": 0
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 2
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 3,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 3,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "blue"
+                  ],
+                  [
+                    "red",
+                    "orange"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 9,
+                "ancestor_id": 7,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "hand"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              },
+              {
+                "node_id": 11,
+                "ancestor_id": 2,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "blue"
+                  ],
+                  [
+                    "red",
+                    "orange"
+                  ],
+                  [
+                    "yellow",
+                    "hand"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-86",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 25.59694420872256,
+          "input_tokens": 27452,
+          "output_tokens": 364,
+          "completed_api_calls": 26,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-89",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 33.85869066696614,
+          "input_tokens": 42980,
+          "output_tokens": 591,
+          "completed_api_calls": 40,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 2,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 1,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 4,
+                "ancestor_id": 1
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 1,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 4,
+                "ancestor_id": 1,
+                "depth": 3,
+                "state_key": [
+                  [
+                    "blue",
+                    "hand"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "table"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-90",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 30.40263883303851,
+          "input_tokens": 27677,
+          "output_tokens": 380,
+          "completed_api_calls": 26,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 7,
+            "unmodeled_nodes": 1,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 0,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": []
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 0,
+            "parse_failures": 0,
+            "events": []
+          }
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-112",
+          "status": "completed",
+          "upstream_success": true,
+          "symbolic_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 42.19533662497997,
+          "input_tokens": 48474,
+          "output_tokens": 587,
+          "completed_api_calls": 44,
+          "unaccounted_api_calls": 0,
+          "tree": {
+            "present": true,
+            "root_parse_valid": true,
+            "modeled_nodes": 10,
+            "unmodeled_nodes": 4,
+            "parse_failures": 0,
+            "ancestor_revisit_nodes": 2,
+            "ancestor_revisit_nodes_with_children": 0,
+            "revisits": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 0
+              }
+            ]
+          },
+          "pruning": {
+            "audit_present": true,
+            "root_parse_valid": true,
+            "pruned_nodes": 2,
+            "parse_failures": 0,
+            "events": [
+              {
+                "node_id": 6,
+                "ancestor_id": 4,
+                "depth": 5,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "table"
+                  ],
+                  [
+                    "yellow",
+                    "hand"
+                  ]
+                ]
+              },
+              {
+                "node_id": 7,
+                "ancestor_id": 0,
+                "depth": 2,
+                "state_key": [
+                  [
+                    "blue",
+                    "table"
+                  ],
+                  [
+                    "orange",
+                    "table"
+                  ],
+                  [
+                    "red",
+                    "yellow"
+                  ],
+                  [
+                    "yellow",
+                    "orange"
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "paired_counts": {
+    "both_failure": 10,
+    "both_success": 6,
+    "loss": 1,
+    "gain": 3
+  },
+  "paired_tasks": [
+    {
+      "repeat": 0,
+      "task_id": "instance-15",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -17,
+      "token_difference": -19181
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-23",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -38,
+      "token_difference": -40882
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-32",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -20,
+      "token_difference": -21171
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-35",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": 0,
+      "token_difference": 0
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-36",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": 0,
+      "token_difference": 0
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-42",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -44,
+      "token_difference": -47065
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-48",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": 0,
+      "token_difference": 0
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-56",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -44,
+      "token_difference": -46703
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-58",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": 0,
+      "token_difference": 0
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-59",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -44,
+      "token_difference": -46745
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-63",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -36,
+      "token_difference": -38064
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-66",
+      "outcome": "loss",
+      "control_success": true,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -5,
+      "token_difference": -4652
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-69",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -33,
+      "token_difference": -34334
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-73",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -32,
+      "token_difference": -33746
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-78",
+      "outcome": "gain",
+      "control_success": false,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -19,
+      "token_difference": -20374
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-82",
+      "outcome": "both_failure",
+      "control_success": false,
+      "pruned_success": false,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -33,
+      "token_difference": -34329
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-86",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": 0,
+      "token_difference": 0
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-89",
+      "outcome": "both_success",
+      "control_success": true,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -12,
+      "token_difference": -12682
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-90",
+      "outcome": "gain",
+      "control_success": false,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -35,
+      "token_difference": -38458
+    },
+    {
+      "repeat": 0,
+      "task_id": "instance-112",
+      "outcome": "gain",
+      "control_success": false,
+      "pruned_success": true,
+      "control_status": "completed",
+      "pruned_status": "completed",
+      "api_call_difference": -17,
+      "token_difference": -17417
+    }
+  ],
+  "net_success_gain": 2,
+  "success_rate_difference": 0.1,
+  "estimated_total_cny_off_peak": 0.55622604,
+  "estimated_total_cny_peak": 1.11245208,
+  "limitations": [
+    "One run per arm/task: results do not measure run-to-run variance or prove statistical improvement.",
+    "These paired tasks use the same frozen examples and local random seed; model sampling and service behavior can still vary.",
+    "Ancestor revisits describe parseable LLM state text in saved trees, not verified ground-truth transitions.",
+    "Missing trees and parse failures limit cycle diagnostics. Invalid/incomplete state text is conservatively not pruned.",
+    "Fees estimate actual recorded successful ledger usage at the verified rate snapshot, including prompt cache usage; they are not provider bills.",
+    "Unknown/errored ledger requests may incur additional charges; cache and concurrent execution can affect costs/latency.",
+    "Development observations tune the method; held-out test observations must not be used for further tuning."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "terminal_nodes": [
+    {
+      "id": 13,
+      "state": {
+        "__type__": "EnvState",
+        "steps": [
+          {
+            "__type__": "EnvStep",
+            "action": "unstack the red block from on top of the yellow block",
+            "next_state": "the blue block is clear, the red block is in the hand, the yellow block is clear, the hand is holding the red block, the yellow block is on top of the orange block, the blue block is on the table, and the orange block is on the table."
+          },
+          {
+            "__type__": "EnvStep",
+            "action": "put down the red block",
+            "next_state": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+          },
+          {
+            "__type__": "EnvStep",
+            "action": "unstack the yellow block from on top of the orange block",
+            "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+          },
+          {
+            "__type__": "EnvStep",
+            "action": "stack the yellow block on top of the blue block",
+            "next_state": "the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the blue block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+          },
+          {
+            "__type__": "EnvStep",
+            "action": "pick up the orange block",
+            "next_state": "the orange block is in the hand, the red block is clear, the yellow block is clear, the hand is holding the orange block, the yellow block is on top of the blue block, the blue block is on the table, and the red block is on the table."
+          },
+          {
+            "__type__": "EnvStep",
+            "action": "stack the orange block on top of the yellow block",
+            "next_state": "the orange block is clear, the red block is clear, the hand is empty, the orange block is on top of the yellow block, the yellow block is on top of the blue block, the blue block is on the table, and the red block is on the table."
+          }
+        ],
+        "init_state": "the red block is clear, the blue block is clear, the hand is empty, the red block is on top of the yellow block, the yellow block is on top of the orange block, the blue block is on the table and the orange block is on the table"
+      },
+      "action": {
+        "action_str": "stack the orange block on top of the yellow block",
+        "__type__": "StringAction"
+      },
+      "is_continuous": false,
+      "is_terminal": true,
+      "bn_score": -1,
+      "state_conf": -1,
+      "fast_reward": 0.5,
+      "trajectory_key": {
+        "search_id": "19_1793759083",
+        "indices": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "root_token": "q"
+      },
+      "step": {
+        "__type__": "EnvStep",
+        "action": "stack the orange block on top of the yellow block"
+      },
+      "from_simulate": true,
+      "is_simulated": true,
+      "from_expand": false,
+      "cum_rewards": [
+        50.25
+      ],
+      "visit_count": 1,
+      "from_continuation": false
+    }
+  ],
+  "query": "have that the orange block is on top of the yellow block and the yellow block is on top of the blue block.",
+  "query_idx": 19
+}

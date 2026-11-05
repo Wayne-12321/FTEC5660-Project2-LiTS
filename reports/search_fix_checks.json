@@ -1,0 +1,16 @@
+{
+  "paid_api_calls": 0,
+  "passed": true,
+  "checks": [
+    "finite action exhaustion",
+    "exclude siblings",
+    "singleton no call",
+    "bounded invalid fallback",
+    "skip capped branches",
+    "clean exhaustion",
+    "widen rollout node",
+    "preserve existing children",
+    "rollout checks unknown depth-limit goal",
+    "budget exception saves tree and propagates"
+  ]
+}

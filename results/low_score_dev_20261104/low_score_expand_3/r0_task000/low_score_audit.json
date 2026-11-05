@@ -1,0 +1,87 @@
+{
+  "rule": {
+    "threshold": 0,
+    "max_triggers_per_task": 2,
+    "extra_actions_per_trigger": 1,
+    "reserve_calls": 4,
+    "reserve_returned_tokens": 10000,
+    "phase": "simulate",
+    "requires_total_children": 1
+  },
+  "trigger_attempts": 2,
+  "events": [
+    {
+      "trigger": 1,
+      "node_id": 1,
+      "depth": 1,
+      "original_action": "stack the blue block on top of the red block",
+      "original_fast_reward": 0.0,
+      "budget_before": {
+        "used_calls": 9,
+        "used_tokens": 10289,
+        "calls_remaining": 141,
+        "tokens_remaining": 139711,
+        "allowed": true,
+        "reason": "admitted"
+      },
+      "status": "completed",
+      "new_candidates": [
+        {
+          "node_id": 4,
+          "action": "put down the blue block",
+          "fast_reward": 0.0
+        }
+      ],
+      "budget_after": {
+        "used_calls": 12,
+        "used_tokens": 13570,
+        "calls_remaining": 138,
+        "tokens_remaining": 136430,
+        "allowed": true,
+        "reason": "admitted"
+      },
+      "additional_api_calls": 3,
+      "additional_returned_tokens": 3281
+    },
+    {
+      "trigger": 2,
+      "node_id": 3,
+      "depth": 2,
+      "original_action": "unstack the blue block from on top of the red block",
+      "original_fast_reward": 0.0,
+      "budget_before": {
+        "used_calls": 16,
+        "used_tokens": 17792,
+        "calls_remaining": 134,
+        "tokens_remaining": 132208,
+        "allowed": true,
+        "reason": "admitted"
+      },
+      "status": "completed",
+      "new_candidates": [
+        {
+          "node_id": 6,
+          "action": "pick up the orange block",
+          "fast_reward": 0.0
+        }
+      ],
+      "budget_after": {
+        "used_calls": 18,
+        "used_tokens": 20593,
+        "calls_remaining": 132,
+        "tokens_remaining": 129407,
+        "allowed": true,
+        "reason": "admitted"
+      },
+      "additional_api_calls": 2,
+      "additional_returned_tokens": 2801
+    }
+  ],
+  "skips": [
+    {
+      "node_id": 11,
+      "reason": "task_trigger_cap"
+    }
+  ],
+  "note": "Token reserve is conservative admission, not a strict prediction; original SDK guard enforces each next-call threshold. Low-score original candidate is retained."
+}

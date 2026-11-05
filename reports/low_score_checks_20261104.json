@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "paid_api_calls": 0,
+  "network_disabled": true,
+  "implementation_sha256": "9ed7d91757b3118f4e94c734ea2bcb26dbd821f586e06ed341bc3c42d771d2f4",
+  "test_sha256": "62305a7cab42c8b490d119da28bcfdcc357ea3a8affb95afeeb942669765a147",
+  "checks": [
+    "zero-score singleton adds exactly one distinct candidate and original is retained; node attempted once",
+    "positive/unscored/nonfinite, one legal action, duplicates, multiple children, closed child, non-simulate/PRM modes do not trigger",
+    "at most two widening attempts per task across distinct nodes",
+    "four-call/10000-token reserve exact boundary; insufficient reserve blocks extra expansion",
+    "pending/missing usage/duplicate records/bad row or status/malformed ledger or limits deny widening",
+    "missing ledger rejected rather than assumed zero spent",
+    "real upstream expansion excludes existing sibling and zero-score original wins an equal-score tie",
+    "real rollout retains and executes the original zero-score action under tie",
+    "extra expansion error consumes one attempt, propagates, preserves tree and both audits"
+  ]
+}

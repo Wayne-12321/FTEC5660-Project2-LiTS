@@ -1,0 +1,9 @@
+{
+  "frozen_sources_unchanged": true,
+  "frozen_data_unchanged": true,
+  "existing_test_api_calls": 5509,
+  "additional_api_calls": 0,
+  "network_disabled_in_analysis": true,
+  "analysis_script_sha256": "4f92d758e08db2c6423173e5e7edbfd9e4b8f247f65bdab6d7f1a0b29618748d",
+  "analysis_json_sha256": "e15af245bef5f3aacc4182cf8de76f200a03b0ea5103865daa7787d347dcf86f"
+}

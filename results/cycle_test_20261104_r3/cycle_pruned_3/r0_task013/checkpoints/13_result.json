@@ -1,0 +1,301 @@
+[
+  {
+    "id": 0,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": "have that the red block is on top of the yellow block and the blue block is on top of the orange block.",
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": -1.0,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [],
+      "root_token": "q"
+    },
+    "from_simulate": false,
+    "is_simulated": false,
+    "from_expand": false,
+    "cum_rewards": [
+      0.041666666666666664,
+      -0.25,
+      0.1
+    ],
+    "visit_count": 3,
+    "from_continuation": false
+  },
+  {
+    "id": 1,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the yellow block from on top of the orange block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+        }
+      ],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": {
+      "action_str": "unstack the yellow block from on top of the orange block",
+      "__type__": "StringAction"
+    },
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": 0.5,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [
+        0
+      ],
+      "root_token": "q"
+    },
+    "step": {
+      "__type__": "EnvStep",
+      "action": "unstack the yellow block from on top of the orange block"
+    },
+    "from_simulate": false,
+    "is_simulated": true,
+    "from_expand": true,
+    "cum_rewards": [
+      0.25
+    ],
+    "visit_count": 1,
+    "from_continuation": false
+  },
+  {
+    "id": 4,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the yellow block from on top of the orange block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "put down the yellow block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on the table, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        }
+      ],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": {
+      "action_str": "put down the yellow block",
+      "__type__": "StringAction"
+    },
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": 0.5,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [
+        0,
+        0
+      ],
+      "root_token": "q"
+    },
+    "step": {
+      "__type__": "EnvStep",
+      "action": "put down the yellow block"
+    },
+    "from_simulate": true,
+    "is_simulated": true,
+    "from_expand": false,
+    "cum_rewards": [
+      0.25
+    ],
+    "visit_count": 1,
+    "from_continuation": false
+  },
+  {
+    "id": 5,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the yellow block from on top of the orange block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "put down the yellow block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on the table, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "pick up the blue block",
+          "next_state": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        }
+      ],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": {
+      "action_str": "pick up the blue block",
+      "__type__": "StringAction"
+    },
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": 0.5,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [
+        0,
+        0,
+        0
+      ],
+      "root_token": "q"
+    },
+    "step": {
+      "__type__": "EnvStep",
+      "action": "pick up the blue block"
+    },
+    "from_simulate": true,
+    "is_simulated": true,
+    "from_expand": false,
+    "cum_rewards": [
+      0.25
+    ],
+    "visit_count": 1,
+    "from_continuation": false
+  },
+  {
+    "id": 6,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the yellow block from on top of the orange block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "put down the yellow block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on the table, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "pick up the blue block",
+          "next_state": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "stack the blue block on top of the orange block",
+          "next_state": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on top of the orange block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        }
+      ],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": {
+      "action_str": "stack the blue block on top of the orange block",
+      "__type__": "StringAction"
+    },
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": 0.5,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_token": "q"
+    },
+    "step": {
+      "__type__": "EnvStep",
+      "action": "stack the blue block on top of the orange block"
+    },
+    "from_simulate": true,
+    "is_simulated": true,
+    "from_expand": false,
+    "cum_rewards": [
+      0.25
+    ],
+    "visit_count": 1,
+    "from_continuation": false
+  },
+  {
+    "id": 7,
+    "state": {
+      "__type__": "EnvState",
+      "steps": [
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the yellow block from on top of the orange block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "put down the yellow block",
+          "next_state": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on the table, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "pick up the blue block",
+          "next_state": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "stack the blue block on top of the orange block",
+          "next_state": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on top of the orange block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        },
+        {
+          "__type__": "EnvStep",
+          "action": "unstack the blue block from on top of the orange block",
+          "next_state": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table."
+        }
+      ],
+      "init_state": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table"
+    },
+    "action": {
+      "action_str": "unstack the blue block from on top of the orange block",
+      "__type__": "StringAction"
+    },
+    "is_continuous": false,
+    "is_terminal": false,
+    "bn_score": -1,
+    "state_conf": -1,
+    "fast_reward": 0.0,
+    "trajectory_key": {
+      "search_id": "13_1793759432",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_token": "q"
+    },
+    "step": {
+      "__type__": "EnvStep",
+      "action": "unstack the blue block from on top of the orange block"
+    },
+    "from_simulate": true,
+    "is_simulated": true,
+    "from_expand": false,
+    "cum_rewards": [
+      0.0
+    ],
+    "visit_count": 1,
+    "from_continuation": false
+  }
+]

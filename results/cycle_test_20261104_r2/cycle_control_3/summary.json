@@ -1,0 +1,17 @@
+{
+  "variant": "cycle_control_3",
+  "fixture": false,
+  "planned_tasks": 20,
+  "completed_tasks": 20,
+  "upstream_success_rate": 0.35,
+  "symbolic_success_rate": 0.35,
+  "symbolic_success_std": null,
+  "repeat_symbolic_rates": [
+    0.35
+  ],
+  "input_tokens": 1227335,
+  "output_tokens": 16771,
+  "unaccounted_api_calls": 0,
+  "cost": null,
+  "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+}

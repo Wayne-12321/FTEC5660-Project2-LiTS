@@ -1,0 +1,916 @@
+{
+  "date": "2026-11-04",
+  "round": "results/cycle_test_20261104_r3",
+  "paid_api_calls": 0,
+  "network_disabled": true,
+  "frozen_sources_unchanged": true,
+  "reference_plans_used": false,
+  "source_hashes": {
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task004/status.json": "b9bee3a297173c5b7ac6c028a1116bcfd15e574fd0264ac5708dd34b610addf9",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task004/full_tree/full_tree_4.json": "3278312a57f68ed044c4dcf7af0912f74c9145a2cc86baa972b9f1c4b0b5a5e5",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task004/llm_calls.jsonl": "5a6708b136da6dee8495545007efe56636362e430d444ecc3b0a0cf8c81c2739",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task004/inferencelogger.log": "3d2cbafc4f699a676129b81ea3330a465e03ad63e39dae305d9e5ec45c04df63",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/status.json": "61900c99bfca7d5862da3209c54b247d1de59296583a92c9e14c2350554cc760",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/full_tree/full_tree_4.json": "1b1b5ff65bf75637334a7a539b429aa2c57dec0bf1cac346d037bfe26a333a4a",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/llm_calls.jsonl": "6b5766cf0c79889a0716909ab7e438f679ddd2f2631b2f0e476c52e34762b274",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/inferencelogger.log": "c13dd982060ec05cf5f65d73566c1dad8c988c4786942ac78aee2f302ff9283d",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/cycle_audit.json": "06e678a753cd1e7d09f587b6c81047c6533591b36889e9d75d8092b95fe85278",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/status.json": "aee3be223bfd7d5a1d6ac48396ef42a8a0f0620276b90b4227b6c516652f6bdf",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/full_tree/full_tree_12.json": "3b7991b4337c3b316e187fd21a9e566f947976f8df11871f60bddb680f30ed06",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/llm_calls.jsonl": "afd95f3ecf183ff6407cacfc077c60ae9d8f6caaae862c0e24e37cedb6d44500",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/inferencelogger.log": "c8d1081f91d5707a1f1c2592444df82dbfa9b115a4e51a7bdc7065bfae351976",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/status.json": "7de624153b6d45f13963555993254788b298a5b0e626a64db69210cccff095dc",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/full_tree/full_tree_12.json": "b94f6ec0b904bf1feb991bb42fcc6149ec15af25c104dc0b53d38d3592499384",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/llm_calls.jsonl": "1eefb74e0b21d8f9a7016c27035fd38c1792db4f7395cdbe6adb5863b767ff7b",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/inferencelogger.log": "d5d38d8c50bdae4e8c4b2a18ff9e9c73961c6d3c6dc6bfb35da3b1c8370536b0",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/cycle_audit.json": "2c31673858e9387d07446480592c8e051f2a7869451ddc82f7b2bb34f63602c8",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task013/status.json": "b88de9fb5b381c0838060ca17df370ab17911f691a7d974cd9fdee51da4abc5e",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task013/full_tree/full_tree_13.json": "379672d02939d9b52c8518ca1794523fce020cfc9c37b4530b93dfc1248058cb",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task013/llm_calls.jsonl": "450d3d524a8f390de0ee1bbd612527beccb6f6b036bfea672316e27bcd5b5a80",
+    "results/cycle_test_20261104_r3/cycle_control_3/r0_task013/inferencelogger.log": "6e6a588c81fc5f11ce5ecda23f32342102f0bc9bfb0ec7c906cc5d5f9f290c0a",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/status.json": "e5c19a1443ae3562901931ace0bb5fae2b65bfb967f61e1d146c34c63e74e7d4",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/full_tree/full_tree_13.json": "21bfd9bb2c6de2f6072a44d8e5d906091175ada012280063ba0708b28b5b4a30",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/llm_calls.jsonl": "ad8667fbc6166c82e74b63f22e9562c37da694fbe08dab008af15f22f0e73f3f",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/inferencelogger.log": "00b3e4127671979c28bb28bb06fe63e5b6404a1e5bb506b60ccb75fde53b366e",
+    "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/cycle_audit.json": "26f0f7a6abb5b4e6a2db1a608c49e742be6be6c5bc7a25e991a18e63529f4db2"
+  },
+  "cases": [
+    {
+      "task": {
+        "index": 4,
+        "source_index": 6,
+        "task_id": "instance-36",
+        "pddl_sha256": "d27ed74fcfb9e416333a19b9bc4bbebd52ff708f4da12076ccc42733aff58c84"
+      },
+      "paired_result": {
+        "repeat": 0,
+        "task_id": "instance-36",
+        "outcome": "loss",
+        "control_success": true,
+        "pruned_success": false,
+        "control_status": "completed",
+        "pruned_status": "completed",
+        "api_call_difference": 19,
+        "token_difference": 21503
+      },
+      "initial": "the red block is clear, the blue block is clear, the hand is empty, the blue block is on top of the yellow block, the yellow block is on top of the orange block, the red block is on the table and the orange block is on the table",
+      "goal": "have that the blue block is on top of the red block and the orange block is on top of the blue block.",
+      "arms": {
+        "cycle_control_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_control_3/r0_task004",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 23.61842116713524
+          },
+          "position_replay": {
+            "known_nodes_checked": 7,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 6,
+              "prm": 14,
+              "dynamics": 6
+            }
+          },
+          "traces": []
+        },
+        "cycle_pruned_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 39.34680391708389
+          },
+          "position_replay": {
+            "known_nodes_checked": 10,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 6,
+              "prm": 14,
+              "dynamics": 6
+            },
+            "1": {
+              "dynamics": 2,
+              "policy": 1,
+              "prm": 4
+            },
+            "2": {
+              "policy": 3,
+              "prm": 8,
+              "dynamics": 1
+            }
+          },
+          "traces": [
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/checkpoints/4_0.json",
+              "node_ids": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "depth": 6,
+              "actions": [
+                "unstack the blue block from on top of the yellow block",
+                "stack the blue block on top of the red block",
+                "unstack the yellow block from on top of the orange block",
+                "put down the yellow block",
+                "unstack the blue block from on top of the red block",
+                "stack the blue block on top of the red block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.0,
+                0.5
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/checkpoints/4_1.json",
+              "node_ids": [
+                0,
+                2,
+                8
+              ],
+              "depth": 2,
+              "actions": [
+                "pick up the red block",
+                "put down the red block"
+              ],
+              "fast_rewards": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task004/checkpoints/4_2.json",
+              "node_ids": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                12
+              ],
+              "depth": 6,
+              "actions": [
+                "unstack the blue block from on top of the yellow block",
+                "stack the blue block on top of the red block",
+                "unstack the yellow block from on top of the orange block",
+                "put down the yellow block",
+                "unstack the blue block from on top of the red block",
+                "put down the blue block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      },
+      "control_successful_node_ids": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "control_successful_actions": [
+        "unstack the blue block from on top of the yellow block",
+        "stack the blue block on top of the red block",
+        "unstack the yellow block from on top of the orange block",
+        "put down the yellow block",
+        "pick up the orange block",
+        "stack the orange block on top of the blue block"
+      ],
+      "control_success_path_cycle_free": true,
+      "pruned_tree_solution_prefix_node_ids": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "missing_next_solution_action": "pick up the orange block",
+      "unresolved_decision_node_id": 5,
+      "children_at_unresolved_decision": [
+        {
+          "id": 6,
+          "action": "unstack the blue block from on top of the red block",
+          "fast_reward": 0.0,
+          "known": true,
+          "visit_count": 2,
+          "cum_rewards": [
+            0.25,
+            0.0
+          ]
+        }
+      ],
+      "cycle_checks": [
+        {
+          "node_id": 7,
+          "ancestor_id": 5,
+          "depth": 6,
+          "state_key": [
+            [
+              "blue",
+              "red"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "table"
+            ],
+            [
+              "yellow",
+              "table"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        },
+        {
+          "node_id": 8,
+          "ancestor_id": 0,
+          "depth": 2,
+          "state_key": [
+            [
+              "blue",
+              "yellow"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "table"
+            ],
+            [
+              "yellow",
+              "orange"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        }
+      ],
+      "same_prompt_different_policy_outputs": [
+        {
+          "prompt_hash": "73388b834bb3",
+          "temperature": 0.7,
+          "control_line": 5,
+          "pruned_line": 5,
+          "control_output": "pick up the orange block",
+          "pruned_output": "unstack the blue block from on top of the red block"
+        }
+      ],
+      "causal_limit": "A cycle-free control solution is not directly cut by ancestor equality. Independently sampled arms do not isolate the pruning intervention; missing responses cannot be synthesized by replay."
+    },
+    {
+      "task": {
+        "index": 12,
+        "source_index": 14,
+        "task_id": "instance-69",
+        "pddl_sha256": "bce044232d3de6bc08ab04a5b937bb9c22fde1684680c6f337db9d7dae6840c7"
+      },
+      "paired_result": {
+        "repeat": 0,
+        "task_id": "instance-69",
+        "outcome": "loss",
+        "control_success": true,
+        "pruned_success": false,
+        "control_status": "completed",
+        "pruned_status": "completed",
+        "api_call_difference": -14,
+        "token_difference": -13626
+      },
+      "initial": "the red block is clear, the orange block is clear, the hand is empty, the red block is on top of the blue block, the blue block is on top of the yellow block, the orange block is on the table and the yellow block is on the table",
+      "goal": "have that the red block is on top of the yellow block and the blue block is on top of the orange block.",
+      "arms": {
+        "cycle_control_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 49.66786995809525
+          },
+          "position_replay": {
+            "known_nodes_checked": 13,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 6,
+              "prm": 14,
+              "dynamics": 6
+            },
+            "1": {
+              "dynamics": 6,
+              "policy": 6,
+              "prm": 14
+            }
+          },
+          "traces": [
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/checkpoints/12_0.json",
+              "node_ids": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "depth": 6,
+              "actions": [
+                "pick up the orange block",
+                "put down the orange block",
+                "unstack the red block from on top of the blue block",
+                "put down the red block",
+                "unstack the blue block from on top of the yellow block",
+                "stack the blue block on top of the orange block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.5
+              ]
+            }
+          ]
+        },
+        "cycle_pruned_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 38.37248908402398
+          },
+          "position_replay": {
+            "known_nodes_checked": 10,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 2,
+              "prm": 6,
+              "dynamics": 2
+            },
+            "1": {
+              "dynamics": 5,
+              "policy": 5,
+              "prm": 12
+            },
+            "2": {
+              "prm": 4,
+              "dynamics": 2
+            }
+          },
+          "traces": [
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/checkpoints/12_0.json",
+              "node_ids": [
+                0,
+                2,
+                3
+              ],
+              "depth": 2,
+              "actions": [
+                "pick up the orange block",
+                "put down the orange block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/checkpoints/12_1.json",
+              "node_ids": [
+                0,
+                1,
+                4,
+                7,
+                8,
+                9
+              ],
+              "depth": 5,
+              "actions": [
+                "unstack the red block from on top of the blue block",
+                "put down the red block",
+                "unstack the blue block from on top of the yellow block",
+                "stack the blue block on top of the orange block",
+                "unstack the blue block from on top of the orange block"
+              ],
+              "fast_rewards": [
+                0.0,
+                0.5,
+                0.0,
+                0.5,
+                0.0
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/checkpoints/12_2.json",
+              "node_ids": [
+                0,
+                2,
+                10,
+                11
+              ],
+              "depth": 3,
+              "actions": [
+                "pick up the orange block",
+                "stack the orange block on top of the red block",
+                "unstack the orange block from on top of the red block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      },
+      "control_successful_node_ids": [
+        0,
+        1,
+        8,
+        11,
+        12,
+        13,
+        14
+      ],
+      "control_successful_actions": [
+        "unstack the red block from on top of the blue block",
+        "put down the red block",
+        "unstack the blue block from on top of the yellow block",
+        "stack the blue block on top of the orange block",
+        "pick up the red block",
+        "stack the red block on top of the yellow block"
+      ],
+      "control_success_path_cycle_free": true,
+      "pruned_tree_solution_prefix_node_ids": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "missing_next_solution_action": "pick up the red block",
+      "unresolved_decision_node_id": 8,
+      "children_at_unresolved_decision": [
+        {
+          "id": 9,
+          "action": "unstack the blue block from on top of the orange block",
+          "fast_reward": 0.0,
+          "known": true,
+          "visit_count": 1,
+          "cum_rewards": [
+            0.0
+          ]
+        }
+      ],
+      "cycle_checks": [
+        {
+          "node_id": 3,
+          "ancestor_id": 0,
+          "depth": 2,
+          "state_key": [
+            [
+              "blue",
+              "yellow"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "blue"
+            ],
+            [
+              "yellow",
+              "table"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        },
+        {
+          "node_id": 9,
+          "ancestor_id": 7,
+          "depth": 5,
+          "state_key": [
+            [
+              "blue",
+              "hand"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "table"
+            ],
+            [
+              "yellow",
+              "table"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        },
+        {
+          "node_id": 11,
+          "ancestor_id": 2,
+          "depth": 3,
+          "state_key": [
+            [
+              "blue",
+              "yellow"
+            ],
+            [
+              "orange",
+              "hand"
+            ],
+            [
+              "red",
+              "blue"
+            ],
+            [
+              "yellow",
+              "table"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        }
+      ],
+      "same_prompt_different_policy_outputs": [
+        {
+          "prompt_hash": "91f2c966c59f",
+          "temperature": 0.7,
+          "control_line": 8,
+          "pruned_line": 4,
+          "control_output": "stack the red block on top of the blue block",
+          "pruned_output": "stack the red block on top of the orange block"
+        },
+        {
+          "prompt_hash": "0d963ce6deba",
+          "temperature": 0.7,
+          "control_line": 11,
+          "pruned_line": 7,
+          "control_output": "pick up the red block",
+          "pruned_output": "unstack the blue block from on top of the orange block"
+        }
+      ],
+      "causal_limit": "A cycle-free control solution is not directly cut by ancestor equality. Independently sampled arms do not isolate the pruning intervention; missing responses cannot be synthesized by replay.",
+      "uct_before_iteration_2": {
+        "w_exp": 1,
+        "root_visits": 2,
+        "orange": {
+          "node_id": 2,
+          "q": 0.25,
+          "visits": 1,
+          "uct": 1.0825546111576978
+        },
+        "red": {
+          "node_id": 1,
+          "q": 0.15,
+          "visits": 1,
+          "uct": 0.9825546111576977
+        },
+        "hypothetical_if_cycle_rollout_value_zero": {
+          "orange_q": 0,
+          "orange_uct": 0.8325546111576977,
+          "red_uct": 0.9825546111576977,
+          "root_preference": "red",
+          "not_a_full_search_replay": true
+        },
+        "note": "Existing positive mean-of-path reward from a no-progress loop makes orange the next selected root branch. This calculation alone does not predict a solution after changing backpropagation."
+      }
+    },
+    {
+      "task": {
+        "index": 13,
+        "source_index": 15,
+        "task_id": "instance-73",
+        "pddl_sha256": "03a4f7f7ed4179b23336dedc806dcee67fc2fcd5230da7b3c720b7b3cc32276e"
+      },
+      "paired_result": {
+        "repeat": 0,
+        "task_id": "instance-73",
+        "outcome": "loss",
+        "control_success": true,
+        "pruned_success": false,
+        "control_status": "completed",
+        "pruned_status": "completed",
+        "api_call_difference": 24,
+        "token_difference": 26554
+      },
+      "initial": "the red block is clear, the blue block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the red block is on the table, the blue block is on the table and the orange block is on the table",
+      "goal": "have that the red block is on top of the yellow block and the blue block is on top of the orange block.",
+      "arms": {
+        "cycle_control_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_control_3/r0_task013",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 27.46531816618517
+          },
+          "position_replay": {
+            "known_nodes_checked": 7,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 7,
+              "prm": 16,
+              "dynamics": 6
+            }
+          },
+          "traces": []
+        },
+        "cycle_pruned_3": {
+          "folder": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013",
+          "status": {
+            "status": "completed",
+            "returncode": 0,
+            "elapsed_seconds": 48.297246458008885
+          },
+          "position_replay": {
+            "known_nodes_checked": 12,
+            "errors": []
+          },
+          "iteration_api_records": {
+            "0": {
+              "policy": 6,
+              "prm": 14,
+              "dynamics": 5
+            },
+            "1": {
+              "dynamics": 2,
+              "policy": 2,
+              "prm": 6
+            },
+            "2": {
+              "dynamics": 4,
+              "policy": 4,
+              "prm": 10
+            }
+          },
+          "traces": [
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/checkpoints/13_0.json",
+              "node_ids": [
+                0,
+                1,
+                4,
+                5,
+                6,
+                7
+              ],
+              "depth": 5,
+              "actions": [
+                "unstack the yellow block from on top of the orange block",
+                "put down the yellow block",
+                "pick up the blue block",
+                "stack the blue block on top of the orange block",
+                "unstack the blue block from on top of the orange block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.0
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/checkpoints/13_1.json",
+              "node_ids": [
+                0,
+                2,
+                8
+              ],
+              "depth": 2,
+              "actions": [
+                "pick up the blue block",
+                "put down the blue block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.0
+              ]
+            },
+            {
+              "file": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task013/checkpoints/13_2.json",
+              "node_ids": [
+                0,
+                3,
+                11,
+                14,
+                15
+              ],
+              "depth": 4,
+              "actions": [
+                "pick up the red block",
+                "stack the red block on top of the yellow block",
+                "pick up the blue block",
+                "put down the blue block"
+              ],
+              "fast_rewards": [
+                0.5,
+                0.5,
+                0.5,
+                0.0
+              ]
+            }
+          ]
+        }
+      },
+      "control_successful_node_ids": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "control_successful_actions": [
+        "unstack the yellow block from on top of the orange block",
+        "put down the yellow block",
+        "pick up the blue block",
+        "stack the blue block on top of the orange block",
+        "pick up the red block",
+        "stack the red block on top of the yellow block"
+      ],
+      "control_success_path_cycle_free": true,
+      "pruned_tree_solution_prefix_node_ids": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "missing_next_solution_action": "pick up the red block",
+      "unresolved_decision_node_id": 6,
+      "children_at_unresolved_decision": [
+        {
+          "id": 7,
+          "action": "unstack the blue block from on top of the orange block",
+          "fast_reward": 0.0,
+          "known": true,
+          "visit_count": 1,
+          "cum_rewards": [
+            0.0
+          ]
+        }
+      ],
+      "cycle_checks": [
+        {
+          "node_id": 7,
+          "ancestor_id": 5,
+          "depth": 5,
+          "state_key": [
+            [
+              "blue",
+              "hand"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "table"
+            ],
+            [
+              "yellow",
+              "table"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        },
+        {
+          "node_id": 8,
+          "ancestor_id": 0,
+          "depth": 2,
+          "state_key": [
+            [
+              "blue",
+              "table"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "table"
+            ],
+            [
+              "yellow",
+              "orange"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        },
+        {
+          "node_id": 15,
+          "ancestor_id": 11,
+          "depth": 4,
+          "state_key": [
+            [
+              "blue",
+              "table"
+            ],
+            [
+              "orange",
+              "table"
+            ],
+            [
+              "red",
+              "yellow"
+            ],
+            [
+              "yellow",
+              "orange"
+            ]
+          ],
+          "ancestor_is_on_path": true,
+          "independently_same_positions": true,
+          "canonical_llm_states_equal": true,
+          "complete_goal_met": false,
+          "descendants": 0
+        }
+      ],
+      "same_prompt_different_policy_outputs": [
+        {
+          "prompt_hash": "0d963ce6deba",
+          "temperature": 0.7,
+          "control_line": 6,
+          "pruned_line": 6,
+          "control_output": "pick up the red block",
+          "pruned_output": "unstack the blue block from on top of the orange block"
+        }
+      ],
+      "causal_limit": "A cycle-free control solution is not directly cut by ancestor equality. Independently sampled arms do not isolate the pruning intervention; missing responses cannot be synthesized by replay."
+    }
+  ],
+  "summary": {
+    "loss_cases": 3,
+    "cycle_events": 8,
+    "all_cycle_events_independently_valid": true,
+    "replay_errors": 0,
+    "control_solution_next_action_missing_in_all_pruned_trees": true
+  }
+}

@@ -1,0 +1,10 @@
+{"prompt_hash": "0a28e4eac1bc", "output": "unstack the blue block from on top of the yellow block", "output_hash": "f24b6b18", "temperature": 0.7, "query_idx": 4, "from_phase": "expand"}
+{"prompt_hash": "c671ed39de0b", "output": "stack the blue block on top of the red block", "output_hash": "63e18c3a", "temperature": 0.7, "query_idx": 4, "from_phase": "simulate"}
+{"prompt_hash": "586e2f2d7c4f", "output": "unstack the yellow block from on top of the orange block", "output_hash": "fc878e1d", "temperature": 0.7, "query_idx": 4, "from_phase": "simulate"}
+{"prompt_hash": "769bcbd33fe4", "output": "put down the yellow block", "output_hash": "01ceb645", "temperature": 0.7, "query_idx": 4, "from_phase": "simulate"}
+{"prompt_hash": "73388b834bb3", "output": "unstack the blue block from on top of the red block", "output_hash": "5f396e52", "temperature": 0.7, "query_idx": 4, "from_phase": "simulate"}
+{"prompt_hash": "ae5d2099936f", "output": "stack the blue block on top of the red block", "output_hash": "63e18c3a", "temperature": 1e-06, "query_idx": 4, "from_phase": "simulate"}
+{"prompt_hash": "fcf068fc45fb", "output": "put down the red block", "output_hash": "6993c942", "temperature": 0.7, "query_idx": 4, "from_phase": "expand"}
+{"prompt_hash": "080363c4fa77", "output": "put down the blue block", "output_hash": "cef18372", "temperature": 0.7, "query_idx": 4, "from_phase": "expand"}
+{"prompt_hash": "4b0759b7d7bf", "output": "put down the blue block", "output_hash": "cef18372", "temperature": 1e-06, "query_idx": 4, "from_phase": "expand"}
+{"prompt_hash": "55da1a4a2988", "output": "stack the blue block on top of the yellow block", "output_hash": "6f09244e", "temperature": 1e-06, "query_idx": 4, "from_phase": "expand"}

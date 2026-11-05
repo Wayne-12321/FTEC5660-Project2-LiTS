@@ -1,0 +1,354 @@
+{
+  "date": "2026-11-04",
+  "split": "dev",
+  "planned_paired_tasks": 2,
+  "api_analysis_calls": 0,
+  "rule": {
+    "threshold": 0,
+    "max_triggers_per_task": 2,
+    "extra_actions_per_trigger": 1,
+    "reserve_calls": 4,
+    "reserve_returned_tokens": 10000,
+    "phase": "simulate",
+    "requires_total_children": 1
+  },
+  "arms": {
+    "low_score_control_3": {
+      "summary": {
+        "variant": "low_score_control_3",
+        "fixture": false,
+        "planned_tasks": 2,
+        "completed_tasks": 2,
+        "upstream_success_rate": 0.5,
+        "symbolic_success_rate": 0.5,
+        "symbolic_success_std": null,
+        "repeat_symbolic_rates": [
+          0.5
+        ],
+        "input_tokens": 92317,
+        "output_tokens": 1171,
+        "unaccounted_api_calls": 0,
+        "cost": null,
+        "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+      },
+      "cost": {
+        "model": "deepseek-flash",
+        "rate_date": "2026-11-04",
+        "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+        "completed_calls": 86,
+        "unaccounted_calls": 0,
+        "cache_hit_input_tokens": 72686,
+        "cache_miss_input_tokens": 19631,
+        "input_tokens": 92317,
+        "output_tokens": 1171,
+        "estimated_cny_off_peak": 0.02576872,
+        "estimated_cny_peak": 0.05153744,
+        "note": "Estimate for recorded successful calls only, not confirmed billing. Unknown requests may incur extra charges."
+      },
+      "tasks": [
+        {
+          "task_id": "instance-11",
+          "index": 0,
+          "status": "completed",
+          "symbolic_success": false,
+          "upstream_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 74.87734920764342,
+          "usage": {
+            "calls": 60,
+            "unaccounted_calls": 0,
+            "cache_hit_input_tokens": 51182,
+            "cache_miss_input_tokens": 13662,
+            "input_tokens": 64844,
+            "output_tokens": 807,
+            "total_tokens": 65651,
+            "estimated_cny_off_peak": 0.01791364,
+            "estimated_cny_peak": 0.03582728
+          },
+          "widening": null
+        },
+        {
+          "task_id": "instance-13",
+          "index": 1,
+          "status": "completed",
+          "symbolic_success": true,
+          "upstream_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 29.044766208156943,
+          "usage": {
+            "calls": 26,
+            "unaccounted_calls": 0,
+            "cache_hit_input_tokens": 21504,
+            "cache_miss_input_tokens": 5969,
+            "input_tokens": 27473,
+            "output_tokens": 364,
+            "total_tokens": 27837,
+            "estimated_cny_off_peak": 0.00785508,
+            "estimated_cny_peak": 0.01571016
+          },
+          "widening": null
+        }
+      ],
+      "independent_successes": 1,
+      "status_counts": {
+        "completed": 2
+      },
+      "budget_interruptions": 0,
+      "widening_totals": {
+        "trigger_attempts": 0,
+        "new_candidates": 0,
+        "new_candidates_modeled": 0,
+        "new_candidates_unmodeled": 0,
+        "new_candidates_modeling_unknown": 0,
+        "direct_widening_api_calls": 0,
+        "direct_widening_returned_tokens": 0,
+        "unaccounted_widening_events": 0
+      }
+    },
+    "low_score_expand_3": {
+      "summary": {
+        "variant": "low_score_expand_3",
+        "fixture": false,
+        "planned_tasks": 2,
+        "completed_tasks": 2,
+        "upstream_success_rate": 0.5,
+        "symbolic_success_rate": 0.5,
+        "symbolic_success_std": null,
+        "repeat_symbolic_rates": [
+          0.5
+        ],
+        "input_tokens": 73250,
+        "output_tokens": 978,
+        "unaccounted_api_calls": 0,
+        "cost": null,
+        "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+      },
+      "cost": {
+        "model": "deepseek-flash",
+        "rate_date": "2026-11-04",
+        "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+        "completed_calls": 68,
+        "unaccounted_calls": 0,
+        "cache_hit_input_tokens": 57715,
+        "cache_miss_input_tokens": 15535,
+        "input_tokens": 73250,
+        "output_tokens": 978,
+        "estimated_cny_off_peak": 0.0206013,
+        "estimated_cny_peak": 0.0412026,
+        "note": "Estimate for recorded successful calls only, not confirmed billing. Unknown requests may incur extra charges."
+      },
+      "tasks": [
+        {
+          "task_id": "instance-11",
+          "index": 0,
+          "status": "completed",
+          "symbolic_success": false,
+          "upstream_success": false,
+          "evaluation_error": "",
+          "elapsed_seconds": 53.648041208740324,
+          "usage": {
+            "calls": 42,
+            "unaccounted_calls": 0,
+            "cache_hit_input_tokens": 36211,
+            "cache_miss_input_tokens": 9566,
+            "input_tokens": 45777,
+            "output_tokens": 614,
+            "total_tokens": 46391,
+            "estimated_cny_off_peak": 0.01274622,
+            "estimated_cny_peak": 0.02549244
+          },
+          "widening": {
+            "candidate_retention_verified": true,
+            "trigger_attempts": 2,
+            "new_candidates": 2,
+            "new_candidates_modeled": 0,
+            "new_candidates_unmodeled": 2,
+            "new_candidates_modeling_unknown": 0,
+            "direct_widening_api_calls": 5,
+            "direct_widening_returned_tokens": 6082,
+            "unaccounted_widening_events": 0,
+            "skips_by_reason": {
+              "task_trigger_cap": 1
+            },
+            "events": [
+              {
+                "trigger": 1,
+                "node_id": 1,
+                "depth": 1,
+                "original_action": "stack the blue block on top of the red block",
+                "original_fast_reward": 0.0,
+                "budget_before": {
+                  "used_calls": 9,
+                  "used_tokens": 10289,
+                  "calls_remaining": 141,
+                  "tokens_remaining": 139711,
+                  "allowed": true,
+                  "reason": "admitted"
+                },
+                "status": "completed",
+                "new_candidates": [
+                  {
+                    "node_id": 4,
+                    "action": "put down the blue block",
+                    "fast_reward": 0.0,
+                    "modeled_in_final_tree": false,
+                    "visit_count": 0
+                  }
+                ],
+                "budget_after": {
+                  "used_calls": 12,
+                  "used_tokens": 13570,
+                  "calls_remaining": 138,
+                  "tokens_remaining": 136430,
+                  "allowed": true,
+                  "reason": "admitted"
+                },
+                "additional_api_calls": 3,
+                "additional_returned_tokens": 3281
+              },
+              {
+                "trigger": 2,
+                "node_id": 3,
+                "depth": 2,
+                "original_action": "unstack the blue block from on top of the red block",
+                "original_fast_reward": 0.0,
+                "budget_before": {
+                  "used_calls": 16,
+                  "used_tokens": 17792,
+                  "calls_remaining": 134,
+                  "tokens_remaining": 132208,
+                  "allowed": true,
+                  "reason": "admitted"
+                },
+                "status": "completed",
+                "new_candidates": [
+                  {
+                    "node_id": 6,
+                    "action": "pick up the orange block",
+                    "fast_reward": 0.0,
+                    "modeled_in_final_tree": false,
+                    "visit_count": 0
+                  }
+                ],
+                "budget_after": {
+                  "used_calls": 18,
+                  "used_tokens": 20593,
+                  "calls_remaining": 132,
+                  "tokens_remaining": 129407,
+                  "allowed": true,
+                  "reason": "admitted"
+                },
+                "additional_api_calls": 2,
+                "additional_returned_tokens": 2801
+              }
+            ],
+            "note": "Direct widening deltas exclude any later rollout-path change; they are not the arm total cost difference."
+          }
+        },
+        {
+          "task_id": "instance-13",
+          "index": 1,
+          "status": "completed",
+          "symbolic_success": true,
+          "upstream_success": true,
+          "evaluation_error": "",
+          "elapsed_seconds": 34.475685875397176,
+          "usage": {
+            "calls": 26,
+            "unaccounted_calls": 0,
+            "cache_hit_input_tokens": 21504,
+            "cache_miss_input_tokens": 5969,
+            "input_tokens": 27473,
+            "output_tokens": 364,
+            "total_tokens": 27837,
+            "estimated_cny_off_peak": 0.00785508,
+            "estimated_cny_peak": 0.01571016
+          },
+          "widening": {
+            "candidate_retention_verified": true,
+            "trigger_attempts": 0,
+            "new_candidates": 0,
+            "new_candidates_modeled": 0,
+            "new_candidates_unmodeled": 0,
+            "new_candidates_modeling_unknown": 0,
+            "direct_widening_api_calls": 0,
+            "direct_widening_returned_tokens": 0,
+            "unaccounted_widening_events": 0,
+            "skips_by_reason": {},
+            "events": [],
+            "note": "Direct widening deltas exclude any later rollout-path change; they are not the arm total cost difference."
+          }
+        }
+      ],
+      "independent_successes": 1,
+      "status_counts": {
+        "completed": 2
+      },
+      "budget_interruptions": 0,
+      "widening_totals": {
+        "trigger_attempts": 2,
+        "new_candidates": 2,
+        "new_candidates_modeled": 0,
+        "new_candidates_unmodeled": 2,
+        "new_candidates_modeling_unknown": 0,
+        "direct_widening_api_calls": 5,
+        "direct_widening_returned_tokens": 6082,
+        "unaccounted_widening_events": 0
+      }
+    }
+  },
+  "paired_tasks": [
+    {
+      "task_id": "instance-11",
+      "control_success": false,
+      "expanded_success": false,
+      "outcome": "both_failure",
+      "total_api_call_difference": -18,
+      "total_returned_token_difference": -19260,
+      "total_estimated_cny_peak_difference": -0.010334840000000001
+    },
+    {
+      "task_id": "instance-13",
+      "control_success": true,
+      "expanded_success": true,
+      "outcome": "both_success",
+      "total_api_call_difference": 0,
+      "total_returned_token_difference": 0,
+      "total_estimated_cny_peak_difference": 0.0
+    }
+  ],
+  "paired_counts": {
+    "both_failure": 1,
+    "both_success": 1
+  },
+  "mechanism_triggered": true,
+  "call_difference": -18,
+  "success_difference": 0,
+  "estimated_total_cny_off_peak": 0.04637002,
+  "estimated_total_cny_peak": 0.09274004,
+  "source_fingerprints": {
+    "scripts/lits_low_score.py": "9ed7d91757b3118f4e94c734ea2bcb26dbd821f586e06ed341bc3c42d771d2f4",
+    "scripts/low_score_experiment.py": "8686afc687b8298ccc23d79741e9581f5bc89730534cd551b53852f08ee90ee5",
+    "scripts/check_low_score.py": "62305a7cab42c8b490d119da28bcfdcc357ea3a8affb95afeeb942669765a147",
+    "scripts/lits_fixes.py": "c0f479534b9f9a9ff744ba77b22c014de12480df5d63f6b875cfbb5c93c7b5f8",
+    "scripts/cycle_state.py": "fa824b75502941305098f334800fa6e5cfff7f7149c30fd2562c0abcf1b5e03e",
+    "scripts/common.py": "e4fd3fdd4817b4051c01267a663f8c8c0759e57727dd79d079f69fe2970c90c9",
+    "scripts/entry.py": "b1aea3d97c06dd858854ccec984d072bd22456db1318511c237c57ee28a7df82",
+    "scripts/evaluate.py": "7dc6e89bce1dd500f69456d87f23ad3fba477a0a4be8968ee12aa8a3818bfe22",
+    "scripts/symbolic.py": "d65489cf5cb647f6acbf503a3a8aa4d39b21f50c1af76291a76475a64bb4bb47",
+    "scripts/deepseek_cost.py": "5867b9d75acdba8da959891ae15f1e4783c1e4b13bc40c9fa0cee1d1d95678eb",
+    "configs/low_score_control_3.json": "e6463efa18af50bad788735558f3d4b0a80c6b52984bc9fced58420d2e68bd32",
+    "configs/low_score_expand_3.json": "bdc9efe3979a113af9f671f19f6157bd9a4d34d590142f5e1cc346a6554f74e1"
+  },
+  "report_script_sha256": "126c562d8fa6d279a0a7be4756fa8211177e822e1c72dba1eb9409ecda2fcd44",
+  "limitations": [
+    "Two familiar development tasks, one run per arm, do not establish generalization or stable accuracy improvement.",
+    "Local seed is 42; provider seed is not sent, so independently sampled arms can diverge before widening.",
+    "Both arms retain cycle pruning, original candidate selection and backpropagation; no backtracking or cycle-specific reward change.",
+    "Low-score original candidates are retained; widening is not a hard filter and the original argmax may still select them.",
+    "Widening accounting measures generation/evaluation overhead only; later path changes can add or save calls separately.",
+    "The 10000-token headroom check is conservative admission, not an exact prediction; the original guard checks returned usage before each next request.",
+    "Fees use actual cache usage at the verified snapshot and are not provider bills. Unknown requests may incur additional charges.",
+    "No test task was run in this trial; the existing test protocol/results were not changed."
+  ]
+}

@@ -1,0 +1,1897 @@
+{
+  "date": "2026-11-04",
+  "protocol": "reports/cycle_protocol_20261104.json",
+  "round_count": 3,
+  "unique_tasks": 20,
+  "observations_per_arm": 60,
+  "repeated_observations_not_independent_tasks": true,
+  "local_seed_each_round": 42,
+  "api_seed_sent": false,
+  "frozen_fingerprints": {
+    "scripts/lits_fixes.py": "c0f479534b9f9a9ff744ba77b22c014de12480df5d63f6b875cfbb5c93c7b5f8",
+    "scripts/cycle_state.py": "fa824b75502941305098f334800fa6e5cfff7f7149c30fd2562c0abcf1b5e03e",
+    "scripts/common.py": "e4fd3fdd4817b4051c01267a663f8c8c0759e57727dd79d079f69fe2970c90c9",
+    "scripts/run.py": "60509fb7de57f0a1c215ac9f34830b397d779fde3fd72a7b87e6a345004a3147",
+    "scripts/entry.py": "b1aea3d97c06dd858854ccec984d072bd22456db1318511c237c57ee28a7df82",
+    "scripts/evaluate.py": "7dc6e89bce1dd500f69456d87f23ad3fba477a0a4be8968ee12aa8a3818bfe22",
+    "scripts/cycle_experiment.py": "7c4bbc5a3d7777b339fd6f056d6789298453c9e10748d8647d359f2437b09b71",
+    "configs/cycle_control_3.json": "c36ba97121e3c03bafb98e9cd7ae4394aaff5d35e381650dc30ce9c27c0f06ee",
+    "configs/cycle_pruned_3.json": "e6463efa18af50bad788735558f3d4b0a80c6b52984bc9fced58420d2e68bd32"
+  },
+  "model": "openai/deepseek-flash",
+  "rounds": [
+    {
+      "round": 1,
+      "root": "results/cycle_test_20261104",
+      "arms": {
+        "cycle_control_3": {
+          "successes": 7,
+          "denominator": 20,
+          "success_rate": 0.35,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 1137,
+          "unaccounted_calls": 0,
+          "input_tokens": 1217122,
+          "output_tokens": 16477,
+          "total_tokens": 1233599,
+          "cny_off_peak": 0.34579426,
+          "cny_peak": 0.69158852,
+          "budget_interruptions": 0,
+          "pruned_nodes": 0,
+          "ancestor_revisits": 79,
+          "revisits_with_children": 55,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 0,
+          "mean_task_elapsed_seconds": 51.71044872920029
+        },
+        "cycle_pruned_3": {
+          "successes": 8,
+          "denominator": 20,
+          "success_rate": 0.4,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 721,
+          "unaccounted_calls": 0,
+          "input_tokens": 779004,
+          "output_tokens": 10209,
+          "total_tokens": 789213,
+          "cny_off_peak": 0.22541806,
+          "cny_peak": 0.45083612,
+          "budget_interruptions": 0,
+          "pruned_nodes": 37,
+          "ancestor_revisits": 37,
+          "revisits_with_children": 0,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 20,
+          "mean_task_elapsed_seconds": 33.739782820804976
+        }
+      },
+      "paired_counts": {
+        "both_failure": 10,
+        "both_success": 5,
+        "gain": 3,
+        "loss": 2
+      },
+      "paired_tasks": [
+        {
+          "repeat": 0,
+          "task_id": "instance-15",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -17,
+          "token_difference": -19181
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-23",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -24,
+          "token_difference": -25367
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-32",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -20,
+          "token_difference": -21176
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-35",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-36",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -35,
+          "token_difference": -38365
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-42",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -47065
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-48",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-56",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -46745
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-58",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-59",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -45,
+          "token_difference": -47240
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-63",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -36,
+          "token_difference": -38064
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-66",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -5,
+          "token_difference": -4652
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-69",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -23,
+          "token_difference": -23992
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-73",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -37,
+          "token_difference": -40042
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-78",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -34,
+          "token_difference": -38196
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-82",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -20,
+          "token_difference": -21237
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-86",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-89",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -4,
+          "token_difference": -2923
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-90",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -28,
+          "token_difference": -30141
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-112",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        }
+      ],
+      "net_success_gain": 1,
+      "success_rate_difference": 0.05,
+      "call_reduction": 0.36587510993843453,
+      "token_reduction": 0.36023537632569413,
+      "cost_reduction": 0.3481150901695129,
+      "estimated_total_cny_off_peak": 0.57121232,
+      "estimated_total_cny_peak": 1.14242464
+    },
+    {
+      "round": 2,
+      "root": "results/cycle_test_20261104_r2",
+      "arms": {
+        "cycle_control_3": {
+          "successes": 7,
+          "denominator": 20,
+          "success_rate": 0.35,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 1147,
+          "unaccounted_calls": 0,
+          "input_tokens": 1227335,
+          "output_tokens": 16771,
+          "total_tokens": 1244106,
+          "cny_off_peak": 0.34211772,
+          "cny_peak": 0.68423544,
+          "budget_interruptions": 0,
+          "pruned_nodes": 0,
+          "ancestor_revisits": 82,
+          "revisits_with_children": 58,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 0,
+          "mean_task_elapsed_seconds": 52.567957987450065
+        },
+        "cycle_pruned_3": {
+          "successes": 9,
+          "denominator": 20,
+          "success_rate": 0.45,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 718,
+          "unaccounted_calls": 0,
+          "input_tokens": 778257,
+          "output_tokens": 10046,
+          "total_tokens": 788303,
+          "cny_off_peak": 0.21410832,
+          "cny_peak": 0.42821664,
+          "budget_interruptions": 0,
+          "pruned_nodes": 38,
+          "ancestor_revisits": 38,
+          "revisits_with_children": 0,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 20,
+          "mean_task_elapsed_seconds": 34.177424668800086
+        }
+      },
+      "paired_counts": {
+        "both_failure": 10,
+        "both_success": 6,
+        "loss": 1,
+        "gain": 3
+      },
+      "paired_tasks": [
+        {
+          "repeat": 0,
+          "task_id": "instance-15",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -17,
+          "token_difference": -19181
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-23",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -38,
+          "token_difference": -40882
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-32",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -20,
+          "token_difference": -21171
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-35",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-36",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-42",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -47065
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-48",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-56",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -46703
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-58",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-59",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -46745
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-63",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -36,
+          "token_difference": -38064
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-66",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -5,
+          "token_difference": -4652
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-69",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -33,
+          "token_difference": -34334
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-73",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -32,
+          "token_difference": -33746
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-78",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -19,
+          "token_difference": -20374
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-82",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -33,
+          "token_difference": -34329
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-86",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-89",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -12,
+          "token_difference": -12682
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-90",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -35,
+          "token_difference": -38458
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-112",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -17,
+          "token_difference": -17417
+        }
+      ],
+      "net_success_gain": 2,
+      "success_rate_difference": 0.1,
+      "call_reduction": 0.3740191804707934,
+      "token_reduction": 0.3663699073873127,
+      "cost_reduction": 0.3741676987675471,
+      "estimated_total_cny_off_peak": 0.55622604,
+      "estimated_total_cny_peak": 1.11245208
+    },
+    {
+      "round": 3,
+      "root": "results/cycle_test_20261104_r3",
+      "arms": {
+        "cycle_control_3": {
+          "successes": 10,
+          "denominator": 20,
+          "success_rate": 0.5,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 1049,
+          "unaccounted_calls": 0,
+          "input_tokens": 1120323,
+          "output_tokens": 15375,
+          "total_tokens": 1135698,
+          "cny_off_peak": 0.3124209,
+          "cny_peak": 0.6248418,
+          "budget_interruptions": 0,
+          "pruned_nodes": 0,
+          "ancestor_revisits": 75,
+          "revisits_with_children": 55,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 0,
+          "mean_task_elapsed_seconds": 51.86773705633823
+        },
+        "cycle_pruned_3": {
+          "successes": 8,
+          "denominator": 20,
+          "success_rate": 0.4,
+          "completed_tasks": 20,
+          "status_counts": {
+            "completed": 20
+          },
+          "calls": 737,
+          "unaccounted_calls": 0,
+          "input_tokens": 799747,
+          "output_tokens": 10222,
+          "total_tokens": 809969,
+          "cny_off_peak": 0.21936204,
+          "cny_peak": 0.43872408,
+          "budget_interruptions": 0,
+          "pruned_nodes": 41,
+          "ancestor_revisits": 41,
+          "revisits_with_children": 0,
+          "parse_failure_nodes": 0,
+          "cycle_audits_available": 20,
+          "mean_task_elapsed_seconds": 37.692039972892964
+        }
+      },
+      "paired_counts": {
+        "both_failure": 9,
+        "both_success": 7,
+        "loss": 3,
+        "gain": 1
+      },
+      "paired_tasks": [
+        {
+          "repeat": 0,
+          "task_id": "instance-15",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -17,
+          "token_difference": -19181
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-23",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -38,
+          "token_difference": -40698
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-32",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -27,
+          "token_difference": -28174
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-35",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-36",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 19,
+          "token_difference": 21503
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-42",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -47108
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-48",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-56",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -46703
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-58",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-59",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -44,
+          "token_difference": -46745
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-63",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -36,
+          "token_difference": -38064
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-66",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -16,
+          "token_difference": -16905
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-69",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -14,
+          "token_difference": -13626
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-73",
+          "outcome": "loss",
+          "control_success": true,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 24,
+          "token_difference": 26554
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-78",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 15,
+          "token_difference": 17822
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-82",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -33,
+          "token_difference": -34164
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-86",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": 0,
+          "token_difference": 0
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-89",
+          "outcome": "both_success",
+          "control_success": true,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -12,
+          "token_difference": -12682
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-90",
+          "outcome": "both_failure",
+          "control_success": false,
+          "pruned_success": false,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -28,
+          "token_difference": -30141
+        },
+        {
+          "repeat": 0,
+          "task_id": "instance-112",
+          "outcome": "gain",
+          "control_success": false,
+          "pruned_success": true,
+          "control_status": "completed",
+          "pruned_status": "completed",
+          "api_call_difference": -17,
+          "token_difference": -17417
+        }
+      ],
+      "net_success_gain": -2,
+      "success_rate_difference": -0.1,
+      "call_reduction": 0.2974261201143946,
+      "token_reduction": 0.28680952154534045,
+      "cost_reduction": 0.2978637472717094,
+      "estimated_total_cny_off_peak": 0.53178294,
+      "estimated_total_cny_peak": 1.06356588
+    }
+  ],
+  "totals": {
+    "cycle_control_3": {
+      "successes": 24,
+      "completed_tasks": 60,
+      "calls": 3333,
+      "unaccounted_calls": 0,
+      "input_tokens": 3564780,
+      "output_tokens": 48623,
+      "total_tokens": 3613403,
+      "cny_off_peak": 1.00033288,
+      "cny_peak": 2.00066576,
+      "budget_interruptions": 0,
+      "pruned_nodes": 0,
+      "ancestor_revisits": 236,
+      "revisits_with_children": 168,
+      "parse_failure_nodes": 0,
+      "denominator": 60,
+      "unique_tasks": 20,
+      "pooled_success_rate": 0.4,
+      "round_statistics": {
+        "success_rate": {
+          "values": [
+            0.35,
+            0.35,
+            0.5
+          ],
+          "mean": 0.39999999999999997,
+          "sample_sd": 0.08660254037844388
+        },
+        "successes": {
+          "values": [
+            7,
+            7,
+            10
+          ],
+          "mean": 8,
+          "sample_sd": 1.7320508075688772
+        },
+        "calls": {
+          "values": [
+            1137,
+            1147,
+            1049
+          ],
+          "mean": 1111,
+          "sample_sd": 53.925875050851054
+        },
+        "total_tokens": {
+          "values": [
+            1233599,
+            1244106,
+            1135698
+          ],
+          "mean": 1204467.6666666667,
+          "sample_sd": 59787.536764223136
+        },
+        "cny_off_peak": {
+          "values": [
+            0.34579426,
+            0.34211772,
+            0.3124209
+          ],
+          "mean": 0.33344429333333336,
+          "sample_sd": 0.018299358923987846
+        },
+        "cny_peak": {
+          "values": [
+            0.69158852,
+            0.68423544,
+            0.6248418
+          ],
+          "mean": 0.6668885866666667,
+          "sample_sd": 0.03659871784797569
+        },
+        "pruned_nodes": {
+          "values": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    "cycle_pruned_3": {
+      "successes": 25,
+      "completed_tasks": 60,
+      "calls": 2176,
+      "unaccounted_calls": 0,
+      "input_tokens": 2357008,
+      "output_tokens": 30477,
+      "total_tokens": 2387485,
+      "cny_off_peak": 0.65888842,
+      "cny_peak": 1.31777684,
+      "budget_interruptions": 0,
+      "pruned_nodes": 116,
+      "ancestor_revisits": 116,
+      "revisits_with_children": 0,
+      "parse_failure_nodes": 0,
+      "denominator": 60,
+      "unique_tasks": 20,
+      "pooled_success_rate": 0.4166666666666667,
+      "round_statistics": {
+        "success_rate": {
+          "values": [
+            0.4,
+            0.45,
+            0.4
+          ],
+          "mean": 0.4166666666666667,
+          "sample_sd": 0.02886751345948128
+        },
+        "successes": {
+          "values": [
+            8,
+            9,
+            8
+          ],
+          "mean": 8.333333333333334,
+          "sample_sd": 0.5773502691896257
+        },
+        "calls": {
+          "values": [
+            721,
+            718,
+            737
+          ],
+          "mean": 725.3333333333334,
+          "sample_sd": 10.214368964029708
+        },
+        "total_tokens": {
+          "values": [
+            789213,
+            788303,
+            809969
+          ],
+          "mean": 795828.3333333334,
+          "sample_sd": 12254.626282891426
+        },
+        "cny_off_peak": {
+          "values": [
+            0.22541806,
+            0.21410832,
+            0.21936204
+          ],
+          "mean": 0.21962947333333332,
+          "sample_sd": 0.0056596108662816565
+        },
+        "cny_peak": {
+          "values": [
+            0.45083612,
+            0.42821664,
+            0.43872408
+          ],
+          "mean": 0.43925894666666665,
+          "sample_sd": 0.011319221732563313
+        },
+        "pruned_nodes": {
+          "values": [
+            37,
+            38,
+            41
+          ],
+          "mean": 38.666666666666664,
+          "sample_sd": 2.0816659994661326
+        }
+      }
+    }
+  },
+  "paired_counts": {
+    "both_failure": 29,
+    "both_success": 18,
+    "gain": 7,
+    "loss": 6
+  },
+  "per_task": [
+    {
+      "task_id": "instance-15",
+      "index": 0,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-23",
+      "index": 1,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-32",
+      "index": 2,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-35",
+      "index": 3,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_success",
+        "both_success",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-36",
+      "index": 4,
+      "cycle_control_3": {
+        "successes": 2,
+        "denominator": 3,
+        "by_round": [
+          false,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 2,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "gain",
+        "both_success",
+        "loss"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-42",
+      "index": 5,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-48",
+      "index": 6,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_success",
+        "both_success",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-56",
+      "index": 7,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-58",
+      "index": 8,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_success",
+        "both_success",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-59",
+      "index": 9,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-63",
+      "index": 10,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-66",
+      "index": 11,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "loss",
+        "loss",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": -2
+    },
+    {
+      "task_id": "instance-69",
+      "index": 12,
+      "cycle_control_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "loss"
+      ],
+      "pruned_minus_control_successes": -1
+    },
+    {
+      "task_id": "instance-73",
+      "index": 13,
+      "cycle_control_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          true,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "gain",
+        "both_failure",
+        "loss"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-78",
+      "index": 14,
+      "cycle_control_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "gain",
+        "gain",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": 2
+    },
+    {
+      "task_id": "instance-82",
+      "index": 15,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "both_failure",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-86",
+      "index": 16,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_success",
+        "both_success",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": 0
+    },
+    {
+      "task_id": "instance-89",
+      "index": 17,
+      "cycle_control_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 2,
+        "denominator": 3,
+        "by_round": [
+          false,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "loss",
+        "both_success",
+        "both_success"
+      ],
+      "pruned_minus_control_successes": -1
+    },
+    {
+      "task_id": "instance-90",
+      "index": 18,
+      "cycle_control_3": {
+        "successes": 0,
+        "denominator": 3,
+        "by_round": [
+          false,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          false,
+          true,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_failure",
+        "gain",
+        "both_failure"
+      ],
+      "pruned_minus_control_successes": 1
+    },
+    {
+      "task_id": "instance-112",
+      "index": 19,
+      "cycle_control_3": {
+        "successes": 1,
+        "denominator": 3,
+        "by_round": [
+          true,
+          false,
+          false
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "cycle_pruned_3": {
+        "successes": 3,
+        "denominator": 3,
+        "by_round": [
+          true,
+          true,
+          true
+        ],
+        "statuses": [
+          "completed",
+          "completed",
+          "completed"
+        ]
+      },
+      "paired_outcomes": [
+        "both_success",
+        "gain",
+        "gain"
+      ],
+      "pruned_minus_control_successes": 2
+    }
+  ],
+  "task_consistency": {
+    "cycle_control_3": {
+      "all_3_success": 6,
+      "all_3_failure": 9,
+      "mixed_outcomes": 5
+    },
+    "cycle_pruned_3": {
+      "all_3_success": 6,
+      "all_3_failure": 9,
+      "mixed_outcomes": 5
+    }
+  },
+  "task_success_difference_distribution": {
+    "-3": 0,
+    "-2": 1,
+    "-1": 2,
+    "0": 14,
+    "1": 1,
+    "2": 2,
+    "3": 0
+  },
+  "stability": {
+    "net_success_gains": [
+      1,
+      2,
+      -2
+    ],
+    "accuracy_difference_direction_counts": {
+      "positive": 2,
+      "zero": 0,
+      "negative": 1
+    },
+    "call_reduction_each_round": [
+      0.36587510993843453,
+      0.3740191804707934,
+      0.2974261201143946
+    ],
+    "calls_reduced_every_round": true,
+    "cost_reduced_every_round": true,
+    "pooled_call_reduction": 0.34713471347134717,
+    "pooled_token_reduction": 0.33926965799275643,
+    "pooled_cost_reduction": 0.34133083779071616,
+    "success_rate_differences": {
+      "values": [
+        0.05,
+        0.1,
+        -0.1
+      ],
+      "mean": 0.016666666666666666,
+      "sample_sd": 0.10408329997330665
+    }
+  },
+  "spending": {
+    "new_rounds": [
+      2,
+      3
+    ],
+    "new_calls": 3651,
+    "new_cny_off_peak": 1.0880089800000001,
+    "new_cny_peak": 2.1760179600000003,
+    "all_test_calls": 5509,
+    "all_test_cny_off_peak": 1.6592213,
+    "all_test_cny_peak": 3.3184426,
+    "scope": "Test runs only; development and earlier diagnostic trials excluded."
+  },
+  "limitations": [
+    "The same 20 consecutive six-step tasks are repeated three times: 60 observations per arm are not 60 independent tasks.",
+    "Python/NumPy/Torch local seed stays 42; no provider API seed is sent. Repetition captures service/model sampling variation under that protocol.",
+    "Three rounds provide descriptive stability only, not evidence of causal or statistically significant accuracy improvement.",
+    "Control is engineering-fixed FrontierMCTS/UniquePolicy, not unmodified upstream LiTS.",
+    "Costs are estimates from recorded successful usage, including prompt cache effects; unaccounted requests may also be charged.",
+    "The response model is an alias; provider weight snapshot is unknown. Parallel scheduling/cache/service conditions can affect latency and cost.",
+    "Failed or budget-interrupted tasks remain failures in the 20-task round denominator. No post-test tuning was performed."
+  ]
+}

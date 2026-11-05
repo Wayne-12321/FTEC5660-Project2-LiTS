@@ -1,0 +1,39 @@
+{
+  "original_freeze_preserved": true,
+  "new_protocol_sources_match": true,
+  "frozen_data_preserved": true,
+  "matching_offline_regression_pass": true,
+  "only_development_tasks": true,
+  "original_per_task_limits_preserved": true,
+  "total_completed_calls": 154,
+  "unaccounted_calls": 0,
+  "low_score_direct_calls": 5,
+  "low_score_direct_returned_tokens": 6082,
+  "jobs": [
+    {
+      "variant": "low_score_control_3",
+      "task_id": "instance-11",
+      "calls": 60,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_control_3",
+      "task_id": "instance-13",
+      "calls": 26,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_expand_3",
+      "task_id": "instance-11",
+      "calls": 42,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_expand_3",
+      "task_id": "instance-13",
+      "calls": 26,
+      "status": "completed"
+    }
+  ],
+  "report_sha256": "126c562d8fa6d279a0a7be4756fa8211177e822e1c72dba1eb9409ecda2fcd44"
+}

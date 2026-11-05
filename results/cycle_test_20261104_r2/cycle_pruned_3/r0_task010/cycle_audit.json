@@ -1,0 +1,76 @@
+{
+  "root_parse_valid": true,
+  "pruned_nodes": [
+    {
+      "node_id": 4,
+      "ancestor_id": 0,
+      "depth": 2,
+      "state_key": [
+        [
+          "blue",
+          "table"
+        ],
+        [
+          "orange",
+          "table"
+        ],
+        [
+          "red",
+          "orange"
+        ],
+        [
+          "yellow",
+          "table"
+        ]
+      ]
+    },
+    {
+      "node_id": 5,
+      "ancestor_id": 0,
+      "depth": 2,
+      "state_key": [
+        [
+          "blue",
+          "table"
+        ],
+        [
+          "orange",
+          "table"
+        ],
+        [
+          "red",
+          "orange"
+        ],
+        [
+          "yellow",
+          "table"
+        ]
+      ]
+    },
+    {
+      "node_id": 13,
+      "ancestor_id": 11,
+      "depth": 5,
+      "state_key": [
+        [
+          "blue",
+          "table"
+        ],
+        [
+          "orange",
+          "hand"
+        ],
+        [
+          "red",
+          "table"
+        ],
+        [
+          "yellow",
+          "table"
+        ]
+      ]
+    }
+  ],
+  "parse_failure_node_ids": [],
+  "method": "LLM states compared only with ancestors; invalid/incomplete text is not pruned"
+}

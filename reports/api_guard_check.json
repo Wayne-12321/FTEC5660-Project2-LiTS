@@ -1,0 +1,13 @@
+{
+  "network_disabled": true,
+  "paid_api_calls": 0,
+  "mock_requests": 1,
+  "checks": [
+    "SDK retries disabled",
+    "output cap enforced",
+    "vLLM-only field removed",
+    "DeepSeek thinking explicitly disabled",
+    "all usage recorded",
+    "request beyond call budget blocked before transport"
+  ]
+}

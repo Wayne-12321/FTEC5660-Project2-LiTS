@@ -1,0 +1,67 @@
+{
+  "variant": "low_score_control_3",
+  "config": {
+    "dataset": "blocksworld",
+    "search_args": {
+      "n_iters": 3,
+      "n_actions": 3,
+      "max_steps": 6,
+      "roll_out_steps": 6,
+      "n_action_for_simulate": 1,
+      "n_confidence": 1,
+      "force_terminating_on_depth_limit": true,
+      "terminate_on_terminal_node": false,
+      "terminate_on_first_solution": true,
+      "early_stop_reward": 0.0,
+      "add_continuation": false,
+      "enable_think_policy": false,
+      "enable_think_eval": false,
+      "enable_think_terminal_gen": false,
+      "max_length": 512,
+      "runtime_limit_before_iter": 600
+    },
+    "max_output_tokens": 512,
+    "limits": {
+      "max_api_calls_per_task": 150,
+      "max_total_tokens_per_task": 150000,
+      "timeout_seconds_per_task": 900
+    },
+    "search_algorithm": "mcts_cycle"
+  },
+  "split": "dev",
+  "repeats": 1,
+  "tasks": [
+    {
+      "index": 0,
+      "source_index": 0,
+      "task_id": "instance-11",
+      "pddl_sha256": "c4962198d01c0ce42417ee513e1ec7630eb71c77589654c713369b413fb0db8a"
+    },
+    {
+      "index": 1,
+      "source_index": 1,
+      "task_id": "instance-13",
+      "pddl_sha256": "a46c3dc8293f5488858d0d9c724916bd5578efe44ac509700009d2b319d0a8a9"
+    }
+  ],
+  "api_execution": true,
+  "model": "openai/deepseek-flash",
+  "endpoint": "https://api.deepseek.com",
+  "pricing_verified_date": "2026-11-04",
+  "upstream_commit": "1ef347bee7b3f2c10dc504342589b8c951794c2d",
+  "data_sha256": "57f973e5e595962c93c34ecba5568d97da349970f2be8c7a45cfe1684b78de69",
+  "source_fingerprints": {
+    "scripts/lits_low_score.py": "9ed7d91757b3118f4e94c734ea2bcb26dbd821f586e06ed341bc3c42d771d2f4",
+    "scripts/low_score_experiment.py": "8686afc687b8298ccc23d79741e9581f5bc89730534cd551b53852f08ee90ee5",
+    "scripts/check_low_score.py": "62305a7cab42c8b490d119da28bcfdcc357ea3a8affb95afeeb942669765a147",
+    "scripts/lits_fixes.py": "c0f479534b9f9a9ff744ba77b22c014de12480df5d63f6b875cfbb5c93c7b5f8",
+    "scripts/cycle_state.py": "fa824b75502941305098f334800fa6e5cfff7f7149c30fd2562c0abcf1b5e03e",
+    "scripts/common.py": "e4fd3fdd4817b4051c01267a663f8c8c0759e57727dd79d079f69fe2970c90c9",
+    "scripts/entry.py": "b1aea3d97c06dd858854ccec984d072bd22456db1318511c237c57ee28a7df82",
+    "scripts/evaluate.py": "7dc6e89bce1dd500f69456d87f23ad3fba477a0a4be8968ee12aa8a3818bfe22",
+    "scripts/symbolic.py": "d65489cf5cb647f6acbf503a3a8aa4d39b21f50c1af76291a76475a64bb4bb47",
+    "scripts/deepseek_cost.py": "5867b9d75acdba8da959891ae15f1e4783c1e4b13bc40c9fa0cee1d1d95678eb",
+    "configs/low_score_control_3.json": "e6463efa18af50bad788735558f3d4b0a80c6b52984bc9fced58420d2e68bd32",
+    "configs/low_score_expand_3.json": "bdc9efe3979a113af9f671f19f6157bd9a4d34d590142f5e1cc346a6554f74e1"
+  }
+}

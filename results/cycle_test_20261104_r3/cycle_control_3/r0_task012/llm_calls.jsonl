@@ -1,0 +1,12 @@
+{"prompt_hash": "e673c9cfb925", "output": "unstack the red block from on top of the blue block", "output_hash": "c53faa90", "temperature": 0.7, "query_idx": 12, "from_phase": "expand"}
+{"prompt_hash": "be22988f4a0d", "output": "put down the orange block", "output_hash": "38130a75", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "8f64a8883fa7", "output": "unstack the red block from on top of the blue block", "output_hash": "c53faa90", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "37f358f76029", "output": "put down the red block", "output_hash": "6993c942", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "8d396cb7bd76", "output": "unstack the blue block from on top of the yellow block", "output_hash": "f24b6b18", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "5142c643e936", "output": "stack the blue block on top of the orange block", "output_hash": "efd3028a", "temperature": 1e-06, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "37f358f76029", "output": "put down the red block", "output_hash": "6993c942", "temperature": 0.7, "query_idx": 12, "from_phase": "expand"}
+{"prompt_hash": "91f2c966c59f", "output": "stack the red block on top of the blue block", "output_hash": "f1de5b4d", "temperature": 0.7, "query_idx": 12, "from_phase": "expand"}
+{"prompt_hash": "8d396cb7bd76", "output": "unstack the blue block from on top of the yellow block", "output_hash": "f24b6b18", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "5142c643e936", "output": "stack the blue block on top of the orange block", "output_hash": "efd3028a", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "0d963ce6deba", "output": "pick up the red block", "output_hash": "d4093c6e", "temperature": 0.7, "query_idx": 12, "from_phase": "simulate"}
+{"prompt_hash": "badc997c84dd", "output": "stack the red block on top of the yellow block", "output_hash": "40d85335", "temperature": 1e-06, "query_idx": 12, "from_phase": "simulate"}

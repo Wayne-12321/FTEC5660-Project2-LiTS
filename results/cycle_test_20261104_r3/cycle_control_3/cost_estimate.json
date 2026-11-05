@@ -1,0 +1,14 @@
+{
+  "model": "deepseek-flash",
+  "rate_date": "2026-11-04",
+  "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "completed_calls": 1049,
+  "unaccounted_calls": 0,
+  "cache_hit_input_tokens": 887145,
+  "cache_miss_input_tokens": 233178,
+  "input_tokens": 1120323,
+  "output_tokens": 15375,
+  "estimated_cny_off_peak": 0.3124209,
+  "estimated_cny_peak": 0.6248418,
+  "note": "Estimate for recorded successful calls only, not confirmed billing. Unknown requests may incur extra charges."
+}

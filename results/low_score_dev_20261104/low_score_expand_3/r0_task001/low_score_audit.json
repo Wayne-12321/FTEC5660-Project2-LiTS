@@ -1,0 +1,15 @@
+{
+  "rule": {
+    "threshold": 0,
+    "max_triggers_per_task": 2,
+    "extra_actions_per_trigger": 1,
+    "reserve_calls": 4,
+    "reserve_returned_tokens": 10000,
+    "phase": "simulate",
+    "requires_total_children": 1
+  },
+  "trigger_attempts": 0,
+  "events": [],
+  "skips": [],
+  "note": "Token reserve is conservative admission, not a strict prediction; original SDK guard enforces each next-call threshold. Low-score original candidate is retained."
+}

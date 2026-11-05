@@ -1,0 +1,246 @@
+{
+  "completed_jobs": [
+    {
+      "variant": "cycle_pruned_3",
+      "index": 1,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 0,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 0,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 1,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 3,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 2,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 3,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 2,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 4,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 4,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 6,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 6,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 5,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 8,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 7,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 5,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 8,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 9,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 7,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 10,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 9,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 11,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 10,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 12,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 11,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 13,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 12,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 14,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 15,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 14,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 13,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 16,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 16,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 17,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 15,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 18,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 17,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 18,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_pruned_3",
+      "index": 19,
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "variant": "cycle_control_3",
+      "index": 19,
+      "status": "completed",
+      "returncode": 0
+    }
+  ],
+  "planned_jobs": 40,
+  "fatal": false
+}

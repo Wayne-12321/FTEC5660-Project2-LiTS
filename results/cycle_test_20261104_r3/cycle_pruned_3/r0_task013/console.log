@@ -1,0 +1,181 @@
+[2026-11-04 10:30:32] [INFO] [root] Command: <PROJECT_ROOT>/scripts/entry.py --include lits_benchmark.blocksworld lits_fixes --dataset blocksworld --policy blocksworld_unique --transition blocksworld --policy-model openai/deepseek-flash --eval-model openai/deepseek-flash --cfg search_algorithm=mcts_cycle --var offset=13 limit=1 --output-dir <PROJECT_ROOT>/results/cycle_test_20261104_r3/.jobs/cycle_pruned_3_013/r0_task013 --dataset-arg config_file=<PROJECT_ROOT>/lits-llm/demos/blocksworld/bw_data_bw_config.yaml domain_file=<PROJECT_ROOT>/lits-llm/demos/blocksworld/bw_data_generated_domain.pddl data_file=<PROJECT_ROOT>/data/test.json base_dir=<PROJECT_ROOT>/lits-llm/demos/blocksworld --search-arg n_iters=3 n_actions=3 max_steps=6 roll_out_steps=6 n_action_for_simulate=1 n_confidence=1 force_terminating_on_depth_limit=true terminate_on_terminal_node=false terminate_on_first_solution=true early_stop_reward=0.0 add_continuation=false enable_think_policy=false enable_think_eval=false enable_think_terminal_gen=false max_length=512 runtime_limit_before_iter=600 --component-arg max_new_tokens=512
+[2026-11-04 10:30:32] [INFO] [root] Working directory: <PROJECT_ROOT>
+[2026-11-04 10:30:32] [WARNING] [lits.components.base] Policy.__init__: task_prompt_spec not found for task_name='blocksworld' or task_type='env_grounded'
+Config: search_algorithm=mcts_cycle
+Var: offset=13
+Var: limit=1
+Imported custom modules: ['lits_benchmark.blocksworld', 'lits_fixes']
+Search: n_iters=3
+Search: n_actions=3
+Search: max_steps=6
+Search: roll_out_steps=6
+Search: n_action_for_simulate=1
+Search: n_confidence=1
+Search: force_terminating_on_depth_limit=True
+Search: terminate_on_terminal_node=False
+Search: terminate_on_first_solution=True
+Search: early_stop_reward=0.0
+Search: add_continuation=False
+Search: enable_think_policy=False
+Search: enable_think_eval=False
+Search: enable_think_terminal_gen=False
+Search: max_length=512
+Search: runtime_limit_before_iter=600
+Component: max_new_tokens=512
+Dataset: config_file=<PROJECT_ROOT>/lits-llm/demos/blocksworld/bw_data_bw_config.yaml
+Dataset: domain_file=<PROJECT_ROOT>/lits-llm/demos/blocksworld/bw_data_generated_domain.pddl
+Dataset: data_file=<PROJECT_ROOT>/data/test.json
+Dataset: base_dir=<PROJECT_ROOT>/lits-llm/demos/blocksworld
+Current working directory: <PROJECT_ROOT>
+Log/config file/results are saved to: <PROJECT_ROOT>/results/cycle_test_20261104_r3/.jobs/cycle_pruned_3_013/r0_task013
+  0%|          | 0/1 [00:00<?, ?it/s][2026-11-04 10:30:32] [INFO] [lits.agents.tree.mcts] [MCTS] Begin (example=13)
+
+MCTS iteration:   0%|          | 0/3 [00:00<?, ?it/s][A[2026-11-04 10:30:32] [INFO] [lits.agents.tree.mcts] ==================== [MCTS] Iteration 0/3 (example=13) ====================
+[2026-11-04 10:30:32] [INFO] [lits_fixes] FRONTIER iteration=0 selected_node=0 depth=0
+[2026-11-04 10:30:32] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=expand)
+[2026-11-04 10:30:32] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:30:39] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=expand)
+[2026-11-04 10:30:39] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:30:39] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:30:40] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the yellow block, the yellow block was on top of the orange block and is now in the hand, the yellow block is no longer clear, and the orange block is now clear.
+[2026-11-04 10:30:40] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table.
+[2026-11-04 10:30:40] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:30:40] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:30:42] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:30:43] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was holding the yellow block and is now empty, the yellow block was in the hand and is now on the table, and the yellow block is now clear.
+[2026-11-04 10:30:43] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on the table, the orange block is on the table, the red block is on the table, and the yellow block is on the table.
+[2026-11-04 10:30:43] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:30:43] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:30:46] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:30:46] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the blue block, the blue block was on the table and is now in the hand, and the blue block is no longer clear.
+[2026-11-04 10:30:46] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.
+[2026-11-04 10:30:46] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:30:46] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:30:49] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:30:50] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was holding the blue block and is now empty, the blue block was in the hand and is now on top of the orange block, the orange block is no longer clear, and the blue block is now clear.
+[2026-11-04 10:30:50] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on top of the orange block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.
+[2026-11-04 10:30:50] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:30:50] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:30:53] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:30:55] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the blue block, the blue block was on top of the orange block and is now in the hand, the blue block is no longer clear, and the orange block is now clear.
+[2026-11-04 10:30:55] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.
+[2026-11-04 10:30:55] [INFO] [lits_fixes] CYCLE prune node=7 ancestor=5 depth=5
+[2026-11-04 10:30:55] [INFO] [lits.agents.tree.mcts] [Backpropagate] Begin
+[2026-11-04 10:30:55] [INFO] [lits.agents.tree.mcts] [Backpropagate] End
+[2026-11-04 10:30:55] [INFO] [lits.agents.tree.mcts] [MCTS] Iteration 0/3 (example=13) | terminals=0
+Root
+├── unstack the yellow block from on top of the orange block r=0.50 d=1 [sim]
+│   └── put down the yellow block r=0.50 d=2 [sim]
+│       └── pick up the blue block r=0.50 d=3 [sim]
+│           └── stack the blue block on top of the orange block r=0.50 d=4 [sim]
+│               └── unstack the blue block from on top of the orange block r=0.00 d=5 [sim]
+├── pick up the blue block r=0.50 d=1
+└── pick up the red block r=0.50 d=1
+
+MCTS iteration:  33%|███▎      | 1/3 [00:22<00:44, 22.14s/it][A[2026-11-04 10:30:55] [INFO] [lits.agents.tree.mcts] ==================== [MCTS] Iteration 1/3 (example=13) ====================
+[2026-11-04 10:30:55] [INFO] [lits_fixes] FRONTIER iteration=1 selected_node=2 depth=1
+[2026-11-04 10:30:55] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the blue block, the blue block was on the table and is now in the hand, and the blue block is no longer clear.
+[2026-11-04 10:30:55] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is in the hand, the red block is clear, the yellow block is clear, the hand is holding the blue block, the yellow block is on top of the orange block, the orange block is on the table, and the red block is on the table.
+[2026-11-04 10:30:55] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=expand)
+[2026-11-04 10:30:55] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:31:02] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=expand)
+[2026-11-04 10:31:02] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:31:02] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:31:03] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was holding the blue block and is now empty, the blue block was in the hand and is now on the table, and the blue block is now clear.
+[2026-11-04 10:31:03] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the blue block is on the table, the orange block is on the table, and the red block is on the table.
+[2026-11-04 10:31:03] [INFO] [lits_fixes] CYCLE prune node=8 ancestor=0 depth=2
+[2026-11-04 10:31:03] [INFO] [lits.agents.tree.mcts] [Backpropagate] Begin
+[2026-11-04 10:31:03] [INFO] [lits.agents.tree.mcts] [Backpropagate] End
+[2026-11-04 10:31:03] [INFO] [lits.agents.tree.mcts] [MCTS] Iteration 1/3 (example=13) | terminals=0
+Root
+├── unstack the yellow block from on top of the orange block r=0.50 d=1 [sim]
+│   └── put down the yellow block r=0.50 d=2 [sim]
+│       └── pick up the blue block r=0.50 d=3 [sim]
+│           └── stack the blue block on top of the orange block r=0.50 d=4 [sim]
+│               └── unstack the blue block from on top of the orange block r=0.00 d=5 [sim]
+├── pick up the blue block r=0.50 d=1
+│   ├── put down the blue block r=0.00 d=2 [sim]
+│   ├── stack the blue block on top of the yellow block r=0.00 d=2
+│   └── stack the blue block on top of the red block r=0.00 d=2
+└── pick up the red block r=0.50 d=1
+
+MCTS iteration:  67%|██████▋   | 2/3 [00:30<00:14, 14.10s/it][A[2026-11-04 10:31:03] [INFO] [lits.agents.tree.mcts] ==================== [MCTS] Iteration 2/3 (example=13) ====================
+[2026-11-04 10:31:03] [INFO] [lits_fixes] FRONTIER iteration=2 selected_node=3 depth=1
+[2026-11-04 10:31:04] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the red block, the red block was on the table and is now in the hand, and the red block is no longer clear.
+[2026-11-04 10:31:04] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the red block is in the hand, the yellow block is clear, the hand is holding the red block, the yellow block is on top of the orange block, the blue block is on the table, and the orange block is on the table.
+[2026-11-04 10:31:04] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=expand)
+[2026-11-04 10:31:04] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:31:12] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=expand)
+[2026-11-04 10:31:12] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:31:12] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:31:13] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was holding the red block and is now empty, the red block was in the hand and is now on top of the yellow block, the yellow block is no longer clear, and the red block is now clear.
+[2026-11-04 10:31:13] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the red block is clear, the hand is empty, the red block is on top of the yellow block, the yellow block is on top of the orange block, the blue block is on the table, and the orange block is on the table.
+[2026-11-04 10:31:13] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:31:13] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:31:15] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:31:16] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was empty and is now holding the blue block, the blue block was on the table and is now in the hand, and the blue block is no longer clear.
+[2026-11-04 10:31:16] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is in the hand, the red block is clear, the hand is holding the blue block, the red block is on top of the yellow block, the yellow block is on top of the orange block, and the orange block is on the table.
+[2026-11-04 10:31:16] [INFO] [lits.agents.tree.mcts] [Expand] Begin (example=13, phase=simulate)
+[2026-11-04 10:31:16] [WARNING] [lits.components.base] Chat Model but no system prompt constructed since `task_prompt_spec` is None 
+[2026-11-04 10:31:18] [INFO] [lits.agents.tree.mcts] [Expand] End (phase=simulate)
+[2026-11-04 10:31:18] [WARNING] [lits_benchmark.blocksworld] [CHANGE] The hand was holding the blue block and is now empty, the blue block was in the hand and is now on the table, and the blue block is now clear.
+[2026-11-04 10:31:18] [WARNING] [lits_benchmark.blocksworld] [NEW STATE] the blue block is clear, the red block is clear, the hand is empty, the red block is on top of the yellow block, the yellow block is on top of the orange block, the blue block is on the table, and the orange block is on the table.
+[2026-11-04 10:31:18] [INFO] [lits_fixes] CYCLE prune node=15 ancestor=11 depth=4
+[2026-11-04 10:31:18] [INFO] [lits.agents.tree.mcts] [Backpropagate] Begin
+[2026-11-04 10:31:18] [INFO] [lits.agents.tree.mcts] [Backpropagate] End
+[2026-11-04 10:31:18] [INFO] [lits.agents.tree.mcts] [MCTS] Iteration 2/3 (example=13) | terminals=0
+Root
+├── unstack the yellow block from on top of the orange block r=0.50 d=1 [sim]
+│   └── put down the yellow block r=0.50 d=2 [sim]
+│       └── pick up the blue block r=0.50 d=3 [sim]
+│           └── stack the blue block on top of the orange block r=0.50 d=4 [sim]
+│               └── unstack the blue block from on top of the orange block r=0.00 d=5 [sim]
+├── pick up the blue block r=0.50 d=1
+│   ├── put down the blue block r=0.00 d=2 [sim]
+│   ├── stack the blue block on top of the yellow block r=0.00 d=2
+│   └── stack the blue block on top of the red block r=0.00 d=2
+└── pick up the red block r=0.50 d=1
+    ├── stack the red block on top of the yellow block r=0.50 d=2 [sim]
+    │   └── pick up the blue block r=0.50 d=3 [sim]
+    │       └── put down the blue block r=0.00 d=4 [sim]
+    ├── put down the red block r=0.00 d=2
+    └── stack the red block on top of the blue block r=0.00 d=2
+
+MCTS iteration: 100%|██████████| 3/3 [00:45<00:00, 14.63s/it][A
+                                                             [A[2026-11-04 10:31:18] [INFO] [lits.agents.tree.mcts] [MCTS] End (example=13)
+100%|██████████| 1/1 [00:45<00:00, 45.88s/it]100%|██████████| 1/1 [00:45<00:00, 45.88s/it]
+[2026-11-04 10:31:18] [INFO] [root] Total time: 45.890779972076416
+[2026-11-04 10:31:18] [INFO] [root] default: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [root] dynamics: 	 {'num_calls': 11, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 9516, 'output_tokens': 422, 'running_time': 9.868317365646362, 'total_hours': 0.0027411992682351005}
+[2026-11-04 10:31:18] [INFO] [root] policy: 	 {'num_calls': 12, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 5687, 'output_tokens': 89, 'running_time': 10.622898817062378, 'total_hours': 0.0029508052269617718}
+[2026-11-04 10:31:18] [INFO] [root] evaluator: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [root] prm: 	 {'num_calls': 30, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 41964, 'output_tokens': 165, 'running_time': 25.32252049446106, 'total_hours': 0.007034033470683628}
+[2026-11-04 10:31:18] [INFO] [root] bn_eval: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [root] bn_entropy: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [root] memory: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [root] augmentor: 	 {'num_calls': 0, 'num_batch_calls': 0, 'num_flatten_calls': 0, 'input_tokens': 0, 'output_tokens': 0, 'running_time': 0, 'total_hours': 0.0}
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Loaded 12 records from <PROJECT_ROOT>/results/cycle_test_20261104_r3/.jobs/cycle_pruned_3_013/r0_task013/llm_calls.jsonl
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] ======================================================================
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] LLM Call Diversity Report
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] ======================================================================
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Unique states visited: 12
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Avg. policy calls per state: 1.0
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Dup. rate (all): 0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Per-prompt breakdown:
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] Prompt       Total  Uniq   Dup%    
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] -----------------------------------
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] a46d086a4141 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] c32e4dbe3e30 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 920d43dd5d5b 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 4c524c085989 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 5142c643e936 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 0d963ce6deba 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 878af66e5c95 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] f74bb646e13d 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] bebb7df5d632 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 9471825d560b 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] ec618952c711 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] 796d5f92c3e4 1      1      0.0%
+[2026-11-04 10:31:18] [INFO] [lits.eval.llm_call_logger] ======================================================================
+[2026-11-04 10:31:18] [INFO] [root] Tree search complete. Terminal nodes saved to <PROJECT_ROOT>/results/cycle_test_20261104_r3/.jobs/cycle_pruned_3_013/r0_task013/terminal_nodes/
+[2026-11-04 10:31:18] [INFO] [root] Run lits-eval to extract answers and compute accuracy.

@@ -1,0 +1,7 @@
+{"prompt_hash": "a46d086a4141", "output": "unstack the yellow block from on top of the orange block", "output_hash": "fc878e1d", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "c32e4dbe3e30", "output": "pick up the blue block", "output_hash": "fae2ed00", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "920d43dd5d5b", "output": "put down the yellow block", "output_hash": "01ceb645", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "4c524c085989", "output": "pick up the blue block", "output_hash": "fae2ed00", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "5142c643e936", "output": "stack the blue block on top of the orange block", "output_hash": "efd3028a", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "0d963ce6deba", "output": "pick up the red block", "output_hash": "d4093c6e", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "badc997c84dd", "output": "stack the red block on top of the yellow block", "output_hash": "40d85335", "temperature": 1e-06, "query_idx": 13, "from_phase": "simulate"}

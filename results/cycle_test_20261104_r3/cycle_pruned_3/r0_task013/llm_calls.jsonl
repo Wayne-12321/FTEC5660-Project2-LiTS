@@ -1,0 +1,12 @@
+{"prompt_hash": "a46d086a4141", "output": "unstack the yellow block from on top of the orange block", "output_hash": "fc878e1d", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "c32e4dbe3e30", "output": "pick up the blue block", "output_hash": "fae2ed00", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "920d43dd5d5b", "output": "put down the yellow block", "output_hash": "01ceb645", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "4c524c085989", "output": "pick up the blue block", "output_hash": "fae2ed00", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "5142c643e936", "output": "stack the blue block on top of the orange block", "output_hash": "efd3028a", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "0d963ce6deba", "output": "unstack the blue block from on top of the orange block", "output_hash": "fb84d13e", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "878af66e5c95", "output": "put down the blue block", "output_hash": "cef18372", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "f74bb646e13d", "output": "stack the blue block on top of the yellow block", "output_hash": "6f09244e", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "bebb7df5d632", "output": "stack the red block on top of the yellow block", "output_hash": "40d85335", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "9471825d560b", "output": "put down the red block", "output_hash": "6993c942", "temperature": 0.7, "query_idx": 13, "from_phase": "expand"}
+{"prompt_hash": "ec618952c711", "output": "pick up the blue block", "output_hash": "fae2ed00", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}
+{"prompt_hash": "796d5f92c3e4", "output": "put down the blue block", "output_hash": "cef18372", "temperature": 0.7, "query_idx": 13, "from_phase": "simulate"}

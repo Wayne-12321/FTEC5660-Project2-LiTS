@@ -1,0 +1,17 @@
+{
+  "variant": "low_score_control_3",
+  "fixture": false,
+  "planned_tasks": 2,
+  "completed_tasks": 2,
+  "upstream_success_rate": 0.5,
+  "symbolic_success_rate": 0.5,
+  "symbolic_success_std": null,
+  "repeat_symbolic_rates": [
+    0.5
+  ],
+  "input_tokens": 92317,
+  "output_tokens": 1171,
+  "unaccounted_api_calls": 0,
+  "cost": null,
+  "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+}

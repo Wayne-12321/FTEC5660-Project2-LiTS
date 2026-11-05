@@ -1,0 +1,13 @@
+{
+  "network_disabled": true,
+  "paid_api_calls": 0,
+  "checks": [
+    "baseline_10: config instantiated, verified, components constructed",
+    "baseline_10: official CLI dry-run passed",
+    "modified_3: config instantiated, verified, components constructed",
+    "modified_3: official CLI dry-run passed",
+    "114 source tasks loaded; every reference plan passed independent replay",
+    "Frozen development/test sets disjoint (2/20)",
+    "Official evaluator passed synthetic fixture; independent replay rejects illegal plan; missing task stays in denominator"
+  ]
+}

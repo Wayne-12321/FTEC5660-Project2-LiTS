@@ -1,0 +1,24 @@
+{
+  "recording_stage": "supplementary record during test execution; not part of original pre-test freeze",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "packages": {
+    "openai": "1.78.1",
+    "numpy": "2.2.6",
+    "torch": "2.6.0",
+    "python-dotenv": "1.1.0"
+  },
+  "sha256": {
+    "scripts/symbolic.py": "d65489cf5cb647f6acbf503a3a8aa4d39b21f50c1af76291a76475a64bb4bb47",
+    "scripts/deepseek_cost.py": "5867b9d75acdba8da959891ae15f1e4783c1e4b13bc40c9fa0cee1d1d95678eb",
+    "requirements-lock.txt": "7a0cb4035fdcba1eb02c949e6ca1130469c2cb8a083e84bb5cac1666056d8fa6",
+    "requirements-api.txt": "b80319f21008f926083a0059e6e9361cef18fa003d045677e929212e70809482",
+    "scripts/cycle_report.py": "bcd43e364c91fbefac8900c88f4e698e1d0c34c13eaa2c0ed62a312937795d69"
+  },
+  "api_seed_sent": false,
+  "provider_model_snapshot": "not returned; response alias only",
+  "timestamp_ledger_fields": [
+    "timestamp_utc",
+    "response_model"
+  ]
+}

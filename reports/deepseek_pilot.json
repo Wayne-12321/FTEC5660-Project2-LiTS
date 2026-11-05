@@ -1,0 +1,40 @@
+{
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "rows": [
+    {
+      "variant": "modified_3",
+      "task_id": "instance-11",
+      "status": "completed",
+      "symbolic_success": false,
+      "elapsed_seconds": 80.12954695802182,
+      "completed_api_calls": 96,
+      "input_tokens": 93518,
+      "output_tokens": 1326,
+      "estimated_cny_off_peak": 0.03223394,
+      "estimated_cny_peak": 0.06446788,
+      "budget_stop_observed": false,
+      "iterations_started": 3,
+      "result_dir": "results/deepseek_dev_modified_01"
+    },
+    {
+      "variant": "baseline_10",
+      "task_id": "instance-11",
+      "status": "completed",
+      "symbolic_success": false,
+      "elapsed_seconds": 124.19670558301732,
+      "completed_api_calls": 150,
+      "input_tokens": 145222,
+      "output_tokens": 2056,
+      "estimated_cny_off_peak": 0.0446219,
+      "estimated_cny_peak": 0.0892438,
+      "budget_stop_observed": false,
+      "iterations_started": 10,
+      "result_dir": "results/deepseek_dev_baseline_01"
+    }
+  ],
+  "estimated_total_cny_off_peak": 0.07685584000000001,
+  "estimated_total_cny_peak": 0.15371168000000002,
+  "billing_verified": false,
+  "note": "Single development sample, one run per arm. Both failed; not sufficient to compare accuracy. No request cap exception observed. Fees estimated from official rate snapshot and actual cache usage."
+}

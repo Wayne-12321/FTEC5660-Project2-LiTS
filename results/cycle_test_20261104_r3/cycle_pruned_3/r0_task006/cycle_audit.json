@@ -1,0 +1,6 @@
+{
+  "root_parse_valid": true,
+  "pruned_nodes": [],
+  "parse_failure_node_ids": [],
+  "method": "LLM states compared only with ancestors; invalid/incomplete text is not pruned"
+}

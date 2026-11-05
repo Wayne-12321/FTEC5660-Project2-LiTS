@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-04",
+  "fingerprints": {
+    "scripts/lits_fixes.py": "c0f479534b9f9a9ff744ba77b22c014de12480df5d63f6b875cfbb5c93c7b5f8",
+    "scripts/cycle_state.py": "fa824b75502941305098f334800fa6e5cfff7f7149c30fd2562c0abcf1b5e03e",
+    "scripts/common.py": "e4fd3fdd4817b4051c01267a663f8c8c0759e57727dd79d079f69fe2970c90c9",
+    "scripts/run.py": "60509fb7de57f0a1c215ac9f34830b397d779fde3fd72a7b87e6a345004a3147",
+    "scripts/entry.py": "b1aea3d97c06dd858854ccec984d072bd22456db1318511c237c57ee28a7df82",
+    "scripts/evaluate.py": "7dc6e89bce1dd500f69456d87f23ad3fba477a0a4be8968ee12aa8a3818bfe22",
+    "scripts/cycle_experiment.py": "7c4bbc5a3d7777b339fd6f056d6789298453c9e10748d8647d359f2437b09b71",
+    "configs/cycle_control_3.json": "c36ba97121e3c03bafb98e9cd7ae4394aaff5d35e381650dc30ce9c27c0f06ee",
+    "configs/cycle_pruned_3.json": "e6463efa18af50bad788735558f3d4b0a80c6b52984bc9fced58420d2e68bd32"
+  },
+  "dev_root": "<PROJECT_ROOT>/results/cycle_dev_20261104",
+  "development_summaries": {
+    "cycle_control_3": {
+      "variant": "cycle_control_3",
+      "fixture": false,
+      "planned_tasks": 2,
+      "completed_tasks": 2,
+      "upstream_success_rate": 0.5,
+      "symbolic_success_rate": 0.5,
+      "symbolic_success_std": null,
+      "repeat_symbolic_rates": [
+        0.5
+      ],
+      "input_tokens": 103303,
+      "output_tokens": 1447,
+      "unaccounted_api_calls": 0,
+      "cost": null,
+      "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+    },
+    "cycle_pruned_3": {
+      "variant": "cycle_pruned_3",
+      "fixture": false,
+      "planned_tasks": 2,
+      "completed_tasks": 2,
+      "upstream_success_rate": 0.5,
+      "symbolic_success_rate": 0.5,
+      "symbolic_success_std": null,
+      "repeat_symbolic_rates": [
+        0.5
+      ],
+      "input_tokens": 71357,
+      "output_tokens": 1001,
+      "unaccounted_api_calls": 0,
+      "cost": null,
+      "cost_note": "Use provider billing/usage details; no prices assumed. Failed requests may be billed."
+    }
+  },
+  "test_rule": "Next 20 frozen tasks, one run each arm, local seed 42, 4 concurrent tasks, alternate arm order by task. No test-driven tuning.",
+  "primary_metric": "Independent symbolic replay success / all 20 planned tasks; incomplete runs count as failures",
+  "secondary_metrics": [
+    "API calls",
+    "returned tokens",
+    "estimated CNY off-peak/peak",
+    "pruned nodes",
+    "ancestor revisits",
+    "budget interruptions"
+  ],
+  "only_experimental_difference": "search_algorithm: mcts_frontier versus mcts_cycle",
+  "model": "openai/deepseek-flash",
+  "pricing_verified_date": "2026-11-04",
+  "no_reference_plans": true,
+  "no_symbolic_transition_or_planner": true
+}

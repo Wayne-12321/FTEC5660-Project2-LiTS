@@ -1,0 +1,30 @@
+{
+  "planned_jobs": 4,
+  "completed_jobs": [
+    {
+      "variant": "low_score_expand_3",
+      "task_id": "instance-11",
+      "index": 0,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_control_3",
+      "task_id": "instance-11",
+      "index": 0,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_expand_3",
+      "task_id": "instance-13",
+      "index": 1,
+      "status": "completed"
+    },
+    {
+      "variant": "low_score_control_3",
+      "task_id": "instance-13",
+      "index": 1,
+      "status": "completed"
+    }
+  ],
+  "fatal": false
+}
