@@ -47,6 +47,8 @@
     "No fresh-machine dependency rebuild was performed.",
     "Remote model snapshot cannot be frozen by local seeds.",
     "Fees are snapshot-based estimates, not checked bills.",
-    "GitHub publication and actual Zoom recording are separate live submission actions."
-  ]
+    "Actual Zoom recording and course-portal submission remain separate live actions."
+  ],
+  "student_repository_url": "https://github.com/Wayne-12321/FTEC5660-Project2-LiTS",
+  "repository_note": "New public repository created 5 November 2026; this commit provides the reviewed submission content."
 }

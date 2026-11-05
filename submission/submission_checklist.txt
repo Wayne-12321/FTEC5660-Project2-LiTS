@@ -11,12 +11,11 @@ READY LOCALLY
 [done] GitHub-ready curated source/evidence copy and English setup/run README.
 [done] API credentials, local environment, caches and upstream nested Git excluded.
 [done] Timed English recording script, target 10-12 minutes.
+[done] Published student repository with readable preparation commits:
+       https://github.com/Wayne-12321/FTEC5660-Project2-LiTS
+       Existing FTEC5660/FTEC5660-HW2 assignment repositories were not changed.
 
 REQUIRES LIVE SUBMISSION ACTION
-[ ] Publish the prepared student repository and obtain its accessible GitHub URL.
-    Account found in this project's other chats: Wayne-12321.
-    Existing public repos FTEC5660 and FTEC5660-HW2 are previous assignments, not Project 2.
-    Proposed new repo name: FTEC5660-Project2-LiTS (not created or published).
 [ ] Make and review an actual Zoom recording, at most 15 minutes.
 [ ] Upload the recording and check the instructor can open the link.
 [ ] Submit the PDF, student repository link and recording link in the required course portal.

@@ -17,7 +17,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "2eb45eabfc652e542d2915261f7d6ddc2f7136085c6aacb431cbdcb9ca21addb"
+      "sha256": "c0eda9d8639501b490030b17eb0b2cd70a7a73a94bfe2c78856b60b77791befa"
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
@@ -4105,11 +4105,11 @@
     },
     {
       "path": "submission/submission_checklist.txt",
-      "sha256": "5556d641063eb23bf15209fb5b39e2f50af43aa2b51153f71c532d1d1b2891f1"
+      "sha256": "48b17d21e56da75346ea76a184cc81f4cb6b3bee64e88adecdc8135ef3d0ac96"
     },
     {
       "path": "submission/verification.json",
-      "sha256": "bd39645e5902dbe76ccc439377b2b0ce8bfeec67cb9fb9e00b544b8bcc676b7d"
+      "sha256": "0f35d6429e091c7e79ff1b9b35d7c2dccf650d14a41413cce3aca6e1856f1d8a"
     },
     {
       "path": "submission_setup.sh",

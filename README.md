@@ -96,4 +96,6 @@ The local student-package commits are preparation commits made on 5 November 202
 
 ## Submission items
 
-The assignment requires the report, a student GitHub repository link with readable commits, and a recorded Zoom presentation link of at most 15 minutes. A timed presentation script is included under `submission/`. A local package is not a published repository and is not a Zoom recording. Supply those live links to the course portal after uploading/recording.
+Student submission repository: **https://github.com/Wayne-12321/FTEC5660-Project2-LiTS**. The repository contains the prepared source, selected evidence, formal report and readable preparation commits.
+
+The assignment requires the report, this student repository link, and a recorded Zoom presentation link of at most 15 minutes. A timed presentation script is included under `submission/`; the actual recording and course-portal submission remain to be completed.
