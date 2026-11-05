@@ -1,0 +1,28 @@
+{
+  "dataset": "blocksworld",
+  "search_args": {
+    "n_iters": 3,
+    "n_actions": 3,
+    "max_steps": 6,
+    "roll_out_steps": 6,
+    "n_action_for_simulate": 1,
+    "n_confidence": 1,
+    "force_terminating_on_depth_limit": true,
+    "terminate_on_terminal_node": false,
+    "terminate_on_first_solution": true,
+    "early_stop_reward": 0.0,
+    "add_continuation": false,
+    "enable_think_policy": false,
+    "enable_think_eval": false,
+    "enable_think_terminal_gen": false,
+    "max_length": 512,
+    "runtime_limit_before_iter": 600
+  },
+  "max_output_tokens": 512,
+  "limits": {
+    "max_api_calls_per_task": 150,
+    "max_total_tokens_per_task": 150000,
+    "timeout_seconds_per_task": 900
+  },
+  "search_algorithm": "mcts_frontier"
+}

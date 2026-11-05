@@ -1,0 +1,10 @@
+.env
+.venv/
+.cache/
+__pycache__/
+*.pyc
+lits-llm/
+tmp/
+*.log
+!results/**/console.log
+!results/**/inferencelogger.log

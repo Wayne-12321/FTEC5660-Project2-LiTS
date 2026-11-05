@@ -1,0 +1,102 @@
+[
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-15.pddl",
+    "(unstack orange blue)\n(put-down orange)\n(pick-up red)\n(stack red orange)\n(unstack blue yellow)\n(stack blue red)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-23.pddl",
+    "(unstack red yellow)\n(put-down red)\n(unstack yellow orange)\n(stack yellow red)\n(pick-up blue)\n(stack blue orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-32.pddl",
+    "(unstack red yellow)\n(put-down red)\n(pick-up yellow)\n(stack yellow orange)\n(pick-up red)\n(stack red yellow)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-35.pddl",
+    "(unstack orange red)\n(put-down orange)\n(unstack red yellow)\n(put-down red)\n(unstack yellow blue)\n(stack yellow orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-36.pddl",
+    "(unstack blue yellow)\n(stack blue red)\n(unstack yellow orange)\n(put-down yellow)\n(pick-up orange)\n(stack orange blue)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-42.pddl",
+    "(unstack blue red)\n(stack blue orange)\n(pick-up red)\n(stack red blue)\n(pick-up yellow)\n(stack yellow red)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-48.pddl",
+    "(unstack orange blue)\n(put-down orange)\n(unstack blue red)\n(put-down blue)\n(unstack red yellow)\n(stack red blue)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-56.pddl",
+    "(unstack red yellow)\n(stack red orange)\n(pick-up blue)\n(stack blue yellow)\n(unstack red orange)\n(stack red blue)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-58.pddl",
+    "(unstack red blue)\n(put-down red)\n(unstack blue yellow)\n(put-down blue)\n(unstack yellow orange)\n(stack yellow red)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-59.pddl",
+    "(unstack blue red)\n(stack blue orange)\n(pick-up yellow)\n(stack yellow red)\n(unstack blue orange)\n(stack blue yellow)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-63.pddl",
+    "(unstack red orange)\n(put-down red)\n(pick-up orange)\n(stack orange yellow)\n(pick-up blue)\n(stack blue orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-66.pddl",
+    "(unstack red orange)\n(put-down red)\n(unstack orange yellow)\n(stack orange red)\n(pick-up blue)\n(stack blue orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-69.pddl",
+    "(unstack red blue)\n(put-down red)\n(unstack blue yellow)\n(stack blue orange)\n(pick-up red)\n(stack red yellow)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-73.pddl",
+    "(unstack yellow orange)\n(put-down yellow)\n(pick-up red)\n(stack red yellow)\n(pick-up blue)\n(stack blue orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-78.pddl",
+    "(unstack orange yellow)\n(stack orange red)\n(unstack yellow blue)\n(stack yellow orange)\n(pick-up blue)\n(stack blue yellow)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-82.pddl",
+    "(unstack red orange)\n(put-down red)\n(unstack orange blue)\n(stack orange red)\n(pick-up yellow)\n(stack yellow orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-86.pddl",
+    "(unstack blue red)\n(put-down blue)\n(unstack red orange)\n(put-down red)\n(pick-up orange)\n(stack orange red)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-89.pddl",
+    "(unstack red yellow)\n(put-down red)\n(unstack blue orange)\n(stack blue red)\n(pick-up yellow)\n(stack yellow orange)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-90.pddl",
+    "(unstack orange blue)\n(put-down orange)\n(unstack blue yellow)\n(stack blue orange)\n(pick-up yellow)\n(stack yellow blue)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-112.pddl",
+    "(unstack red yellow)\n(put-down red)\n(unstack yellow orange)\n(stack yellow blue)\n(pick-up orange)\n(stack orange yellow)\n",
+    6
+  ]
+]

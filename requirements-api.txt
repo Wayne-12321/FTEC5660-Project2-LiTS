@@ -1,0 +1,20 @@
+# Scoped dependency set for LiTS BlocksWorld + hosted APIs (no local model inference).
+# Install LiTS itself with --no-deps; its full metadata includes unrelated backends.
+numpy==2.2.6
+pandas==2.2.3
+torch==2.6.0
+transformers==4.51.3
+huggingface-hub==0.30.2
+openai==1.78.1
+boto3==1.38.23
+python-dotenv==1.1.0
+pydantic==2.11.4
+PyYAML==6.0.2
+tarski==0.9.1
+pddl==0.5.1
+diskcache==5.6.3
+requests==2.32.3
+scipy==1.15.3
+matplotlib==3.10.3
+ipython==9.2.0
+langchain-core==0.3.60

@@ -1,0 +1,176 @@
+{
+  "upstream_commit": "1ef347bee7b3f2c10dc504342589b8c951794c2d",
+  "source": "lits-llm/demos/blocksworld/bw_data_step_6.json",
+  "source_sha256": "d69e11a875a180ed3f7868d38e3d3732a2f2850ebcc3a1f85ea367d4efc84ded",
+  "selection_rule": "upstream order: first 2 development, next 20 test; not claimed to be paper IDs",
+  "source_count": 114,
+  "splits": {
+    "dev": [
+      {
+        "index": 0,
+        "source_index": 0,
+        "task_id": "instance-11",
+        "pddl_sha256": "c4962198d01c0ce42417ee513e1ec7630eb71c77589654c713369b413fb0db8a"
+      },
+      {
+        "index": 1,
+        "source_index": 1,
+        "task_id": "instance-13",
+        "pddl_sha256": "a46c3dc8293f5488858d0d9c724916bd5578efe44ac509700009d2b319d0a8a9"
+      }
+    ],
+    "dev_sha256": "57f973e5e595962c93c34ecba5568d97da349970f2be8c7a45cfe1684b78de69",
+    "test": [
+      {
+        "index": 0,
+        "source_index": 2,
+        "task_id": "instance-15",
+        "pddl_sha256": "8577d041b7ee6588e3347704e6cecf7f0c97f4594c91c57cc68fd42cb8ef22fa"
+      },
+      {
+        "index": 1,
+        "source_index": 3,
+        "task_id": "instance-23",
+        "pddl_sha256": "cc3c6c28c10be0064f4bb64c918e8b109d68c8f35adcaebcefe29e166f8deffd"
+      },
+      {
+        "index": 2,
+        "source_index": 4,
+        "task_id": "instance-32",
+        "pddl_sha256": "1666302e4ad077b2a3d093854a3363a5cdd569adf78faa79b7e6ca6696bb39d9"
+      },
+      {
+        "index": 3,
+        "source_index": 5,
+        "task_id": "instance-35",
+        "pddl_sha256": "c31a969a946f36cc2c3c0af130623b830db77c5be84f05ba78ec503e5e5d6af7"
+      },
+      {
+        "index": 4,
+        "source_index": 6,
+        "task_id": "instance-36",
+        "pddl_sha256": "d27ed74fcfb9e416333a19b9bc4bbebd52ff708f4da12076ccc42733aff58c84"
+      },
+      {
+        "index": 5,
+        "source_index": 7,
+        "task_id": "instance-42",
+        "pddl_sha256": "e1361ff2c9dd81034fb2a77da9f48967f67b9f7664bfd9c71520122864539bde"
+      },
+      {
+        "index": 6,
+        "source_index": 8,
+        "task_id": "instance-48",
+        "pddl_sha256": "7d40bebc8bf63053c888f29770f63482ff2124a33e52ce92e588c25c0ab319e5"
+      },
+      {
+        "index": 7,
+        "source_index": 9,
+        "task_id": "instance-56",
+        "pddl_sha256": "9dcbd57bc7e4efcda21d512a871958d766c01261630ca258471873c2745d9cc4"
+      },
+      {
+        "index": 8,
+        "source_index": 10,
+        "task_id": "instance-58",
+        "pddl_sha256": "a8b95639a9f3e686c89037929d73644e2759c77f7a3013a3a84484a8c7979d97"
+      },
+      {
+        "index": 9,
+        "source_index": 11,
+        "task_id": "instance-59",
+        "pddl_sha256": "892d76e2a685d38c93e0231ed31d7bccdb3b488eb5410f0209727c724dd8041c"
+      },
+      {
+        "index": 10,
+        "source_index": 12,
+        "task_id": "instance-63",
+        "pddl_sha256": "1406a6d7eba30eddcfdb28edae2b5d66ab3df59403b52928f4d14f736900662e"
+      },
+      {
+        "index": 11,
+        "source_index": 13,
+        "task_id": "instance-66",
+        "pddl_sha256": "64e4e38fb4ae8207b2774b72dcffbacf397881e8ba0581fabc8cabca6398081b"
+      },
+      {
+        "index": 12,
+        "source_index": 14,
+        "task_id": "instance-69",
+        "pddl_sha256": "bce044232d3de6bc08ab04a5b937bb9c22fde1684680c6f337db9d7dae6840c7"
+      },
+      {
+        "index": 13,
+        "source_index": 15,
+        "task_id": "instance-73",
+        "pddl_sha256": "03a4f7f7ed4179b23336dedc806dcee67fc2fcd5230da7b3c720b7b3cc32276e"
+      },
+      {
+        "index": 14,
+        "source_index": 16,
+        "task_id": "instance-78",
+        "pddl_sha256": "72fe263c79bda603d65e73528f5fe4a0c426113c82ade6cf7adca7806dacb303"
+      },
+      {
+        "index": 15,
+        "source_index": 17,
+        "task_id": "instance-82",
+        "pddl_sha256": "ea20b3b4f52ecb4a0deb9d432380fa7448ed1af89de0152b4b410be66b34fc7f"
+      },
+      {
+        "index": 16,
+        "source_index": 18,
+        "task_id": "instance-86",
+        "pddl_sha256": "a36a558d9ab1a952cc9fbdcc106d076bf2bb75e8b062e827a3dea797ce25c42e"
+      },
+      {
+        "index": 17,
+        "source_index": 19,
+        "task_id": "instance-89",
+        "pddl_sha256": "2dfec99bd065e0f8e5539aa2b62ef474a0a8181884ee99c9e37d4d358153d6f1"
+      },
+      {
+        "index": 18,
+        "source_index": 20,
+        "task_id": "instance-90",
+        "pddl_sha256": "9af5c3bb084a2295f0a3a7835d2b2ca07e14b886a3bcb6dfe4c8e8e56c80a524"
+      },
+      {
+        "index": 19,
+        "source_index": 21,
+        "task_id": "instance-112",
+        "pddl_sha256": "1511b5934c0345cfad4a5f1e564a19c696f7146cea2ebbd39527e152e0beb3a9"
+      }
+    ],
+    "test_sha256": "7e434ac9c5ff26fa220bee9fb3d02a9f07f029ffbce805505fa933e0cf01d4b5"
+  },
+  "file_hashes": {
+    "lits-llm/demos/blocksworld/bw_data_step_6.json": "d69e11a875a180ed3f7868d38e3d3732a2f2850ebcc3a1f85ea367d4efc84ded",
+    "lits-llm/demos/blocksworld/bw_data_bw_config.yaml": "3cb59fc82196b2989804db60d31b4702fec566dae0431c2942c5c4b649d9c023",
+    "lits-llm/demos/blocksworld/bw_data_generated_domain.pddl": "e5512d5c5f76a780f6fd9307ad148ef01ac09a5b0bcb9f3785322fe6717d8699",
+    "data/dev.json": "57f973e5e595962c93c34ecba5568d97da349970f2be8c7a45cfe1684b78de69",
+    "data/test.json": "7e434ac9c5ff26fa220bee9fb3d02a9f07f029ffbce805505fa933e0cf01d4b5",
+    "lits-llm/demos/blocksworld/generated_basic/instance-11.pddl": "c4962198d01c0ce42417ee513e1ec7630eb71c77589654c713369b413fb0db8a",
+    "lits-llm/demos/blocksworld/generated_basic/instance-13.pddl": "a46c3dc8293f5488858d0d9c724916bd5578efe44ac509700009d2b319d0a8a9",
+    "lits-llm/demos/blocksworld/generated_basic/instance-15.pddl": "8577d041b7ee6588e3347704e6cecf7f0c97f4594c91c57cc68fd42cb8ef22fa",
+    "lits-llm/demos/blocksworld/generated_basic/instance-23.pddl": "cc3c6c28c10be0064f4bb64c918e8b109d68c8f35adcaebcefe29e166f8deffd",
+    "lits-llm/demos/blocksworld/generated_basic/instance-32.pddl": "1666302e4ad077b2a3d093854a3363a5cdd569adf78faa79b7e6ca6696bb39d9",
+    "lits-llm/demos/blocksworld/generated_basic/instance-35.pddl": "c31a969a946f36cc2c3c0af130623b830db77c5be84f05ba78ec503e5e5d6af7",
+    "lits-llm/demos/blocksworld/generated_basic/instance-36.pddl": "d27ed74fcfb9e416333a19b9bc4bbebd52ff708f4da12076ccc42733aff58c84",
+    "lits-llm/demos/blocksworld/generated_basic/instance-42.pddl": "e1361ff2c9dd81034fb2a77da9f48967f67b9f7664bfd9c71520122864539bde",
+    "lits-llm/demos/blocksworld/generated_basic/instance-48.pddl": "7d40bebc8bf63053c888f29770f63482ff2124a33e52ce92e588c25c0ab319e5",
+    "lits-llm/demos/blocksworld/generated_basic/instance-56.pddl": "9dcbd57bc7e4efcda21d512a871958d766c01261630ca258471873c2745d9cc4",
+    "lits-llm/demos/blocksworld/generated_basic/instance-58.pddl": "a8b95639a9f3e686c89037929d73644e2759c77f7a3013a3a84484a8c7979d97",
+    "lits-llm/demos/blocksworld/generated_basic/instance-59.pddl": "892d76e2a685d38c93e0231ed31d7bccdb3b488eb5410f0209727c724dd8041c",
+    "lits-llm/demos/blocksworld/generated_basic/instance-63.pddl": "1406a6d7eba30eddcfdb28edae2b5d66ab3df59403b52928f4d14f736900662e",
+    "lits-llm/demos/blocksworld/generated_basic/instance-66.pddl": "64e4e38fb4ae8207b2774b72dcffbacf397881e8ba0581fabc8cabca6398081b",
+    "lits-llm/demos/blocksworld/generated_basic/instance-69.pddl": "bce044232d3de6bc08ab04a5b937bb9c22fde1684680c6f337db9d7dae6840c7",
+    "lits-llm/demos/blocksworld/generated_basic/instance-73.pddl": "03a4f7f7ed4179b23336dedc806dcee67fc2fcd5230da7b3c720b7b3cc32276e",
+    "lits-llm/demos/blocksworld/generated_basic/instance-78.pddl": "72fe263c79bda603d65e73528f5fe4a0c426113c82ade6cf7adca7806dacb303",
+    "lits-llm/demos/blocksworld/generated_basic/instance-82.pddl": "ea20b3b4f52ecb4a0deb9d432380fa7448ed1af89de0152b4b410be66b34fc7f",
+    "lits-llm/demos/blocksworld/generated_basic/instance-86.pddl": "a36a558d9ab1a952cc9fbdcc106d076bf2bb75e8b062e827a3dea797ce25c42e",
+    "lits-llm/demos/blocksworld/generated_basic/instance-89.pddl": "2dfec99bd065e0f8e5539aa2b62ef474a0a8181884ee99c9e37d4d358153d6f1",
+    "lits-llm/demos/blocksworld/generated_basic/instance-90.pddl": "9af5c3bb084a2295f0a3a7835d2b2ca07e14b886a3bcb6dfe4c8e8e56c80a524",
+    "lits-llm/demos/blocksworld/generated_basic/instance-112.pddl": "1511b5934c0345cfad4a5f1e564a19c696f7146cea2ebbd39527e152e0beb3a9"
+  }
+}

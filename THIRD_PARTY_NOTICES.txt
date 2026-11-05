@@ -1,0 +1,6 @@
+LiTS is by Xinzhe Li and Yaguang Tao. Upstream: https://github.com/xinzhel/lits-llm
+Pinned SHA: 1ef347bee7b3f2c10dc504342589b8c951794c2d
+Upstream is Apache-2.0; its license is provided under third_party/.
+The upstream checkout is fetched by setup, not included as a nested Git repository.
+Selected data are derived from its bundled BlocksWorld source.
+Student extensions and measured artifacts are identified in README and the report.

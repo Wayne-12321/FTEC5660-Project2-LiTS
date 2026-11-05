@@ -1,0 +1,12 @@
+[
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-11.pddl",
+    "(unstack red yellow)\n(put-down red)\n(pick-up yellow)\n(stack yellow red)\n(unstack blue orange)\n(stack blue yellow)\n",
+    6
+  ],
+  [
+    "gpt-plan-benchmark/gpt_plan_test/instances/generated_basic/instance-13.pddl",
+    "(unstack orange blue)\n(put-down orange)\n(unstack yellow red)\n(put-down yellow)\n(pick-up red)\n(stack red blue)\n",
+    6
+  ]
+]
