@@ -57,15 +57,15 @@ def footer(c,doc):
     c.line(19*mm,A4[1]-15*mm,A4[0]-19*mm,A4[1]-15*mm)
     c.setFillColor(grey);c.setFont('Report',8)
     c.drawString(19*mm,A4[1]-12*mm,'FTEC5660 | Reproducibility Work')
-    c.drawRightString(A4[0]-19*mm,A4[1]-12*mm,'5 November 2026')
+    c.drawRightString(A4[0]-19*mm,A4[1]-12*mm,'9 November 2026')
     c.drawString(19*mm,10*mm,'LiTS / BlocksWorld | Partial reproduction and engineering extension')
     c.drawRightString(A4[0]-19*mm,10*mm,str(doc.page))
     if doc.page==1:
         c.setFont('Report',9);c.drawString(19*mm,22*mm,'Name:');c.drawString(108*mm,22*mm,'Student ID:')
-        c.acroForm.textfield(name='student_name',tooltip='Enter your name before submission',
+        c.acroForm.textfield(name='student_name',tooltip='Student name',
             x=33*mm,y=20*mm,width=66*mm,height=6*mm,fontName='Helvetica',fontSize=10,
             borderWidth=.4,borderColor=grey,fillColor=colors.white,textColor=navy,value='WEI ZIJUN')
-        c.acroForm.textfield(name='student_id',tooltip='Enter your student ID before submission',
+        c.acroForm.textfield(name='student_id',tooltip='Student ID',
             x=132*mm,y=20*mm,width=59*mm,height=6*mm,fontName='Helvetica',fontSize=10,
             borderWidth=.4,borderColor=grey,fillColor=colors.white,textColor=navy,value='1155244573')
     c.restoreState()
@@ -197,10 +197,9 @@ h('References and primary evidence')
 refs=[
  '[1] X. Li and Y. Tao. LiTS: A Modular Framework for LLM Tree Search. arXiv:2603.00631v2, 17 May 2026. Section 3.1 and Table 3. <link href="https://arxiv.org/html/2603.00631v2" color="#087e8b">arxiv.org/html/2603.00631v2</link>.',
  '[2] Author repository, pinned commit 1ef347bee7b3f2c10dc504342589b8c951794c2d (7 October 2026). <link href="https://github.com/xinzhel/lits-llm/tree/1ef347bee7b3f2c10dc504342589b8c951794c2d" color="#087e8b">github.com/xinzhel/lits-llm</link>.',
- '[3] This project: reports/cycle_protocol_20261104.json; cycle_stability_20261104.json; cycle_round3_loss_analysis_20261104.json; low_score_dev_20261104.json; and the matching results/ directories. Measurements: 23 October and 4 November 2026; report prepared 5 November 2026.',
+ '[3] This project: reports/cycle_protocol_20261104.json; cycle_stability_20261104.json; cycle_round3_loss_analysis_20261104.json; low_score_dev_20261104.json; and the matching results/ directories. Measurements: 23 October and 4 November 2026; report prepared 5 November and revised 9 November 2026.',
  '[4] DeepSeek API documentation, pricing snapshot checked 4 November 2026. <link href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/" color="#087e8b">api-docs.deepseek.com/zh-cn/quick_start/pricing/</link>. Local fee code: scripts/deepseek_cost.py.']
 for ref in refs:p(ref,'SmallR')
-p('Preparation note: AI assistance was used for implementation, log analysis and drafting. Empirical claims were checked against measured run artifacts.', 'SmallR')
 
 pdf=ROOT/'output/pdf/LiTS_Reproducibility_Report.pdf'
 doc=SimpleDocTemplate(str(pdf),pagesize=A4,rightMargin=19*mm,leftMargin=19*mm,

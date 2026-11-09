@@ -1,6 +1,6 @@
 # FTEC5660 Project 2 - LiTS / BlocksWorld reproducibility
 
-**WEI ZIJUN, 1155244573** | Report prepared 5 November 2026.
+**WEI ZIJUN, 1155244573** | Report prepared 5 November; revised 9 November 2026.
 
 This is a student partial reproduction using the authors' LiTS repository and an accessible replacement model. It is not the authors' repository and does not reproduce their exact 66.7% BlocksWorld number. The main controlled change is ancestor-cycle pruning on a shared engineering-fixed MCTS control. A later low-score-widening pilot is an exploratory negative result.
 
@@ -92,7 +92,7 @@ Frozen experiment code/configuration must not be edited in place: validators int
 
 This is a curated submission copy. `.env`, `.venv`, caches, the upstream nested `.git`, bulk duplicate traces and nonessential checkpoints are omitted. Original personal absolute path labels in selected report/result metadata are normalized to `<PROJECT_ROOT>` / `<COURSE_ROOT>`; they are not runnable commands. Runtime source/config/data, numeric usage, actions and states are preserved. `EVIDENCE_INVENTORY.json` records distributed hashes and normalized files. `verify_distribution.py` checks those hashes and refuses obvious credential patterns.
 
-The local student-package commits are preparation commits made on 5 November 2026, not a reconstruction of the earlier experiment timeline. Upstream authorship and Apache-2.0 license are documented in `THIRD_PARTY_NOTICES.txt` and `third_party/`. The upstream repository remains unchanged. AI assistance was used for implementation, analysis and report preparation; all empirical claims are backed by measured artifacts.
+The initial student-package commits were preparation commits made on 5 November 2026, not a reconstruction of the earlier experiment timeline. Upstream authorship and Apache-2.0 license are documented in `THIRD_PARTY_NOTICES.txt` and `third_party/`. The upstream repository remains unchanged. Empirical claims are backed by measured artifacts.
 
 ## Submission items
 

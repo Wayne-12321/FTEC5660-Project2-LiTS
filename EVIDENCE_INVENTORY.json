@@ -17,7 +17,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "c0eda9d8639501b490030b17eb0b2cd70a7a73a94bfe2c78856b60b77791befa"
+      "sha256": "966b1f506c1b271b3c84dce6708a1a2739c38d00e7c7e1d0b8a796c485abd8d1"
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
@@ -65,7 +65,7 @@
     },
     {
       "path": "output/pdf/LiTS_Reproducibility_Report.pdf",
-      "sha256": "362490c16eaaec4fec5e765c5de5b83e0e13a4360b1237c3c70828b472d415ab"
+      "sha256": "b3e2e22a44518ea4bb638a96b02e742df2191229e5be1568e81b133c331a2185"
     },
     {
       "path": "reports/api_guard_check.json",
@@ -4085,7 +4085,7 @@
     },
     {
       "path": "submission/build_report.py",
-      "sha256": "05a481eb1ac6f981b3a94f86f4998d361391a0485e9a82867039381cbaf151e5"
+      "sha256": "1b3545618e19c5785e1892b0734b737380f3ad8b99f37a8d3c593a165c92ff48"
     },
     {
       "path": "submission/make_results_plot.py",
@@ -4093,23 +4093,27 @@
     },
     {
       "path": "submission/recording_script_en.txt",
-      "sha256": "42f3bef829698e24e661446420694c3a53c3a12a7010b86ca80266e47c33ee54"
+      "sha256": "a6cb6eb8a115439f84c4fd292c009d678f1783ef21df05f5d3313af29eb5a8a6"
     },
     {
       "path": "submission/report_text.txt",
-      "sha256": "3b3d5193e01a8c49f4f772e4e746a2aa0afa52a07845f02da169338cd0df2bdf"
+      "sha256": "1da2dc9f5950d6d6e0a44faeaac18e08a4f5a1692be7e29c167f2b80571020a0"
     },
     {
       "path": "submission/requirements-report.txt",
       "sha256": "9da3054b333705f02fb54db2c0b0eee62ce0f972c7740cc845505d1e3b9353ab"
     },
     {
+      "path": "submission/show_recording_results.py",
+      "sha256": "a6c47512fc66453fca6abb69e70f93931efa5db5d4d4bbe8ec6b2016e94caa8e"
+    },
+    {
       "path": "submission/submission_checklist.txt",
-      "sha256": "48b17d21e56da75346ea76a184cc81f4cb6b3bee64e88adecdc8135ef3d0ac96"
+      "sha256": "3f9e250bed5109bc69250f3ee9c34928f7a5a28f786ab12e14ddbf9980a5900e"
     },
     {
       "path": "submission/verification.json",
-      "sha256": "0f35d6429e091c7e79ff1b9b35d7c2dccf650d14a41413cce3aca6e1856f1d8a"
+      "sha256": "e2572a146e8bed685b672ed2b290c36264d28c0a8073f2af82b66720ef428429"
     },
     {
       "path": "submission_setup.sh",
@@ -4409,5 +4413,6 @@
       68
     ]
   },
-  "inventory_scope": "All distributed files except this inventory itself; generated local dependencies/caches and Git metadata excluded."
+  "inventory_scope": "All distributed files except this inventory itself; generated local dependencies/caches and Git metadata excluded.",
+  "last_document_revision": "2026-11-09"
 }

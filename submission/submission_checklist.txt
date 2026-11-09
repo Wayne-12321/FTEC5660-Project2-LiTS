@@ -1,4 +1,4 @@
-FTEC5660 Project 2 submission checklist - 5 November 2026
+FTEC5660 Project 2 submission checklist - updated 9 November 2026
 Student: WEI ZIJUN, 1155244573
 Deadline stated in the assignment: 13 November, midnight.
 
@@ -10,7 +10,7 @@ READY LOCALLY
 [done] Failure diary and negative widening pilot included.
 [done] GitHub-ready curated source/evidence copy and English setup/run README.
 [done] API credentials, local environment, caches and upstream nested Git excluded.
-[done] Timed English recording script, target 10-12 minutes.
+[done] Timed English recording script, target 12:30 including a 90-second offline demo.
 [done] Published student repository with readable preparation commits:
        https://github.com/Wayne-12321/FTEC5660-Project2-LiTS
        Existing FTEC5660/FTEC5660-HW2 assignment repositories were not changed.

@@ -50,5 +50,11 @@
     "Actual Zoom recording and course-portal submission remain separate live actions."
   ],
   "student_repository_url": "https://github.com/Wayne-12321/FTEC5660-Project2-LiTS",
-  "repository_note": "New public repository created 5 November 2026; this commit provides the reviewed submission content."
+  "repository_note": "New public repository created 5 November 2026; this commit provides the reviewed submission content.",
+  "last_document_revision": "2026-11-09",
+  "recording_demo_checks": [
+    "Network-disabled cycle regression passed in existing Project2 environment",
+    "Compact saved-results display matches main/pilot summaries",
+    "Round-three offline audit: 3 losses, 8 real cycles, 0 replay errors"
+  ]
 }

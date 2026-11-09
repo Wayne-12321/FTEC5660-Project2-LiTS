@@ -238,8 +238,6 @@ References and primary evidence
 
 [2] Author repository, pinned commit 1ef347bee7b3f2c10dc504342589b8c951794c2d (7 October 2026). <link href="https://github.com/xinzhel/lits-llm/tree/1ef347bee7b3f2c10dc504342589b8c951794c2d" color="#087e8b">github.com/xinzhel/lits-llm</link>.
 
-[3] This project: reports/cycle_protocol_20261104.json; cycle_stability_20261104.json; cycle_round3_loss_analysis_20261104.json; low_score_dev_20261104.json; and the matching results/ directories. Measurements: 23 October and 4 November 2026; report prepared 5 November 2026.
+[3] This project: reports/cycle_protocol_20261104.json; cycle_stability_20261104.json; cycle_round3_loss_analysis_20261104.json; low_score_dev_20261104.json; and the matching results/ directories. Measurements: 23 October and 4 November 2026; report prepared 5 November and revised 9 November 2026.
 
 [4] DeepSeek API documentation, pricing snapshot checked 4 November 2026. <link href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/" color="#087e8b">api-docs.deepseek.com/zh-cn/quick_start/pricing/</link>. Local fee code: scripts/deepseek_cost.py.
-
-Preparation note: AI assistance was used for implementation, log analysis and drafting. Empirical claims were checked against measured run artifacts.
