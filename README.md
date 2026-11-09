@@ -48,6 +48,20 @@ After installation, these use supplied logs and do not call a model:
 
 The three-round validator checks every planned task, local seed, data and source fingerprint. Selected full trees, terminal nodes and actual API ledgers are supplied rather than just summary CSVs. Incomplete tasks would remain failures in the denominator. On some restricted macOS sandboxes, PyTorch/OpenMP cannot access shared memory; run the same offline command in a normal local terminal. This does not require a paid rerun.
 
+## Visual replay for the presentation (no model calls)
+
+A self-contained viewer shows three measured round-three trajectories: a successful pruned run on instance-35, the successful control run on instance-69, and an audited closed-cycle path from its pruned run. Use Previous/Next or Play to inspect the blocks, actions, goals and logged node IDs.
+
+```bash
+python3 submission/build_replay_demo.py
+# macOS: open the resulting local file
+open output/replay/lits-replay.html
+```
+
+Building this viewer needs only Python's standard library and the supplied artifacts. Every displayed action is independently replayed and compared with its logged modeled state. A displayed cycle must match the saved audit and an ancestor on that path; successful paths match the selected terminal actions. Source paths and SHA256 hashes are included. The historical whole-task request counts are 23, 52 and 38; playback starts no search or API request. These selected paths illustrate behavior; the main three-round experiment remains the basis for accuracy and cost conclusions.
+
+The timed English recording script now uses a two-minute visual replay and targets a 13-minute presentation. Integrity checks and result-summary commands remain available as pre-recording checks or backup evidence.
+
 ## Offline checks and CLI dry runs
 
 ```bash

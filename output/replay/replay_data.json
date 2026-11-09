@@ -1,0 +1,542 @@
+{
+  "version": 1,
+  "source_type": "measured_saved_runs",
+  "new_model_calls": 0,
+  "new_search_runs": 0,
+  "transition_validation": "independent four-operator action replay matched every displayed modeled state",
+  "selection": "two selected successful terminals and one audited selected cycle-ending trajectory",
+  "validation_sources": [
+    {
+      "path": "scripts/symbolic.py",
+      "sha256": "d65489cf5cb647f6acbf503a3a8aa4d39b21f50c1af76291a76475a64bb4bb47"
+    },
+    {
+      "path": "data/manifest.json",
+      "sha256": "33acc8d347b797228e082abb82578aad7030db32816595c13462d142243db0f6"
+    },
+    {
+      "path": "submission/build_replay_data.py",
+      "sha256": "55ea70523eb84f3f4e19cf41c528b9245b778290d56b001d6bbd1fcbf27aaad6"
+    }
+  ],
+  "examples": [
+    {
+      "id": "pruned-success-35",
+      "label": "Pruned search succeeds | instance-35",
+      "task_id": "instance-35",
+      "task_index": 3,
+      "arm": "cycle_pruned_3",
+      "round": 3,
+      "run_success": true,
+      "run_calls": 23,
+      "run_returned_tokens": 24585,
+      "run_status": "completed",
+      "trajectory_kind": "selected_solution",
+      "initial_positions": {
+        "blue": "table",
+        "orange": "red",
+        "red": "yellow",
+        "yellow": "blue"
+      },
+      "goal_text": "have that the yellow block is on top of the orange block.",
+      "goal_relations": [
+        [
+          "yellow",
+          "orange"
+        ]
+      ],
+      "steps": [
+        {
+          "step": 0,
+          "node_id": 0,
+          "action": null,
+          "positions": {
+            "blue": "table",
+            "orange": "red",
+            "red": "yellow",
+            "yellow": "blue"
+          },
+          "state_text": "the orange block is clear, the hand is empty, the red block is on top of the yellow block, the orange block is on top of the red block, the yellow block is on top of the blue block and the blue block is on the table",
+          "goal_satisfied": false,
+          "legal_action": null,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 1,
+          "node_id": 1,
+          "action": "unstack the orange block from on top of the red block",
+          "positions": {
+            "blue": "table",
+            "orange": "hand",
+            "red": "yellow",
+            "yellow": "blue"
+          },
+          "state_text": "the orange block is in the hand, the red block is clear, the hand is holding the orange block, the red block is on top of the yellow block, the yellow block is on top of the blue block, and the blue block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 2,
+          "node_id": 2,
+          "action": "put down the orange block",
+          "positions": {
+            "blue": "table",
+            "orange": "table",
+            "red": "yellow",
+            "yellow": "blue"
+          },
+          "state_text": "the orange block is clear, the red block is clear, the hand is empty, the red block is on top of the yellow block, the yellow block is on top of the blue block, the blue block is on the table, and the orange block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 3,
+          "node_id": 3,
+          "action": "unstack the red block from on top of the yellow block",
+          "positions": {
+            "blue": "table",
+            "orange": "table",
+            "red": "hand",
+            "yellow": "blue"
+          },
+          "state_text": "the orange block is clear, the red block is in the hand, the yellow block is clear, the hand is holding the red block, the yellow block is on top of the blue block, the blue block is on the table, and the orange block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 4,
+          "node_id": 4,
+          "action": "put down the red block",
+          "positions": {
+            "blue": "table",
+            "orange": "table",
+            "red": "table",
+            "yellow": "blue"
+          },
+          "state_text": "the orange block is clear, the red block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the blue block, the blue block is on the table, the orange block is on the table, and the red block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 5,
+          "node_id": 5,
+          "action": "unstack the yellow block from on top of the blue block",
+          "positions": {
+            "blue": "table",
+            "orange": "table",
+            "red": "table",
+            "yellow": "hand"
+          },
+          "state_text": "the blue block is clear, the orange block is clear, the red block is clear, the yellow block is in the hand, the hand is holding the yellow block, the blue block is on the table, the orange block is on the table, and the red block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 6,
+          "node_id": 6,
+          "action": "stack the yellow block on top of the orange block",
+          "positions": {
+            "blue": "table",
+            "orange": "table",
+            "red": "table",
+            "yellow": "orange"
+          },
+          "state_text": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the yellow block is on top of the orange block, the blue block is on the table, the orange block is on the table, and the red block is on the table.",
+          "goal_satisfied": true,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task003/full_tree/full_tree_3.json",
+          "sha256": "b852263f9ebd5d63f68f5a0afb7f0cb1cb72c0ef8247cdc3bd8c3176b2391f35"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task003/terminal_nodes/terminal_nodes_3.json",
+          "sha256": "eef83f637ebabdd0b5d45a2bb1cbb05b9d66cb5b2010c2573d1f72703e6d0b5b"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task003/status.json",
+          "sha256": "e1ea5f90ed1b442b86c745e786c586c90a081340ca3b6cec8f903ee6ed91fa3f"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task003/api_calls.jsonl",
+          "sha256": "3ffdc3a35249b41aec6532a1c8fc1bc8dbd4d622532345765dda88b05d3ff556"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task003/cycle_audit.json",
+          "sha256": "82b7be08b204aba8808af17ae8367f27048422a8471cec93f46c6a99f3530e4c"
+        }
+      ]
+    },
+    {
+      "id": "control-solution-69",
+      "label": "Control solution | instance-69",
+      "task_id": "instance-69",
+      "task_index": 12,
+      "arm": "cycle_control_3",
+      "round": 3,
+      "run_success": true,
+      "run_calls": 52,
+      "run_returned_tokens": 56112,
+      "run_status": "completed",
+      "trajectory_kind": "selected_solution",
+      "initial_positions": {
+        "blue": "yellow",
+        "orange": "table",
+        "red": "blue",
+        "yellow": "table"
+      },
+      "goal_text": "have that the red block is on top of the yellow block and the blue block is on top of the orange block.",
+      "goal_relations": [
+        [
+          "red",
+          "yellow"
+        ],
+        [
+          "blue",
+          "orange"
+        ]
+      ],
+      "steps": [
+        {
+          "step": 0,
+          "node_id": 0,
+          "action": null,
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "blue",
+            "yellow": "table"
+          },
+          "state_text": "the red block is clear, the orange block is clear, the hand is empty, the red block is on top of the blue block, the blue block is on top of the yellow block, the orange block is on the table and the yellow block is on the table",
+          "goal_satisfied": false,
+          "legal_action": null,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 1,
+          "node_id": 1,
+          "action": "unstack the red block from on top of the blue block",
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "hand",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the orange block is clear, the red block is in the hand, the hand is holding the red block, the blue block is on top of the yellow block, the orange block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 2,
+          "node_id": 8,
+          "action": "put down the red block",
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the orange block is clear, the red block is clear, the hand is empty, the blue block is on top of the yellow block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 3,
+          "node_id": 11,
+          "action": "unstack the blue block from on top of the yellow block",
+          "positions": {
+            "blue": "hand",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 4,
+          "node_id": 12,
+          "action": "stack the blue block on top of the orange block",
+          "positions": {
+            "blue": "orange",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on top of the orange block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 5,
+          "node_id": 13,
+          "action": "pick up the red block",
+          "positions": {
+            "blue": "orange",
+            "orange": "table",
+            "red": "hand",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the red block is in the hand, the yellow block is clear, the hand is holding the red block, the blue block is on top of the orange block, the orange block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 6,
+          "node_id": 14,
+          "action": "stack the red block on top of the yellow block",
+          "positions": {
+            "blue": "orange",
+            "orange": "table",
+            "red": "yellow",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the red block is clear, the hand is empty, the blue block is on top of the orange block, the red block is on top of the yellow block, the orange block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": true,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/full_tree/full_tree_12.json",
+          "sha256": "3b7991b4337c3b316e187fd21a9e566f947976f8df11871f60bddb680f30ed06"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/terminal_nodes/terminal_nodes_12.json",
+          "sha256": "9baeafb860ea928ec453c1ba370a1355482c370fb1c7a0a7d41361e4e1204028"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/status.json",
+          "sha256": "aee3be223bfd7d5a1d6ac48396ef42a8a0f0620276b90b4227b6c516652f6bdf"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_control_3/r0_task012/api_calls.jsonl",
+          "sha256": "b6751c5ea553a07c352abe64bf9d47e7e1cfcabeadff499fecb2d0289c83d0de"
+        }
+      ]
+    },
+    {
+      "id": "pruned-cycle-69",
+      "label": "Pruned branch closes a cycle | instance-69",
+      "task_id": "instance-69",
+      "task_index": 12,
+      "arm": "cycle_pruned_3",
+      "round": 3,
+      "run_success": false,
+      "run_calls": 38,
+      "run_returned_tokens": 42486,
+      "run_status": "completed",
+      "trajectory_kind": "audited_cycle",
+      "initial_positions": {
+        "blue": "yellow",
+        "orange": "table",
+        "red": "blue",
+        "yellow": "table"
+      },
+      "goal_text": "have that the red block is on top of the yellow block and the blue block is on top of the orange block.",
+      "goal_relations": [
+        [
+          "red",
+          "yellow"
+        ],
+        [
+          "blue",
+          "orange"
+        ]
+      ],
+      "steps": [
+        {
+          "step": 0,
+          "node_id": 0,
+          "action": null,
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "blue",
+            "yellow": "table"
+          },
+          "state_text": "the red block is clear, the orange block is clear, the hand is empty, the red block is on top of the blue block, the blue block is on top of the yellow block, the orange block is on the table and the yellow block is on the table",
+          "goal_satisfied": false,
+          "legal_action": null,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 1,
+          "node_id": 1,
+          "action": "unstack the red block from on top of the blue block",
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "hand",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the orange block is clear, the red block is in the hand, the hand is holding the red block, the blue block is on top of the yellow block, the orange block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 2,
+          "node_id": 4,
+          "action": "put down the red block",
+          "positions": {
+            "blue": "yellow",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the orange block is clear, the red block is clear, the hand is empty, the blue block is on top of the yellow block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 3,
+          "node_id": 7,
+          "action": "unstack the blue block from on top of the yellow block",
+          "positions": {
+            "blue": "hand",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 4,
+          "node_id": 8,
+          "action": "stack the blue block on top of the orange block",
+          "positions": {
+            "blue": "orange",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is clear, the red block is clear, the yellow block is clear, the hand is empty, the blue block is on top of the orange block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": false,
+          "cycle_ancestor_node_id": null,
+          "cycle_ancestor_step": null
+        },
+        {
+          "step": 5,
+          "node_id": 9,
+          "action": "unstack the blue block from on top of the orange block",
+          "positions": {
+            "blue": "hand",
+            "orange": "table",
+            "red": "table",
+            "yellow": "table"
+          },
+          "state_text": "the blue block is in the hand, the orange block is clear, the red block is clear, the yellow block is clear, the hand is holding the blue block, the orange block is on the table, the red block is on the table, and the yellow block is on the table.",
+          "goal_satisfied": false,
+          "legal_action": true,
+          "modeled_state_matches": true,
+          "closed_as_cycle": true,
+          "cycle_ancestor_node_id": 7,
+          "cycle_ancestor_step": 3
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/full_tree/full_tree_12.json",
+          "sha256": "b94f6ec0b904bf1feb991bb42fcc6149ec15af25c104dc0b53d38d3592499384"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/terminal_nodes/terminal_nodes_12.json",
+          "sha256": "309b0f9c06bd730060a8348e3ffb60433551eb7187e8c7c3f21b922ff7a91f62"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/status.json",
+          "sha256": "7de624153b6d45f13963555993254788b298a5b0e626a64db69210cccff095dc"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/api_calls.jsonl",
+          "sha256": "6f795cf8ef4627683411f358cee1a8acc9b87fe27268bcf027cb500d3a9a133c"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/cycle_audit.json",
+          "sha256": "2c31673858e9387d07446480592c8e051f2a7869451ddc82f7b2bb34f63602c8"
+        },
+        {
+          "path": "results/cycle_test_20261104_r3/cycle_pruned_3/r0_task012/checkpoints/12_result.json",
+          "sha256": "33f0d6db1f5b0931f93367902130218ab7b8e39f3c02090a31ec98c678bc09aa"
+        }
+      ]
+    }
+  ]
+}

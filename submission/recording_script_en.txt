@@ -1,5 +1,5 @@
 FTEC5660 Project 2 - presentation script
-WEI ZIJUN | target 12:30 including a 90-second demo; hard course limit 15 minutes
+WEI ZIJUN | target 13:00 including a two-minute visual replay; hard course limit 15 minutes
 Use the eight-page PDF as the screen-sharing material. Rehearse once and shorten as needed.
 This is a script, not a completed Zoom recording. Do not show .env or API-account credentials.
 
@@ -35,40 +35,43 @@ I tested one small follow-up version only on the two development tasks. If a nod
 The offline regressions and CLI dry runs passed. In the paid pilot both arms solve one out of two. Widening triggers twice, but both added actions score zero and neither is explored in the final tree. Direct generation and scoring cost five extra requests. Whole-run calls happen to decrease from eighty-six to sixty-eight, but I cannot attribute that difference to beneficial use of new candidates: they were not explored, and the sampled paths differ. This is a negative effectiveness result with a functioning, bounded implementation.
 
 9:00-9:50 | Page 8 | Reproducibility evidence and limitations
-The package contains pinned scripts and configs, task hashes, real request ledgers, saved trees and independent plan checks. All three analyses can be recomputed from supplied files. The model, sample selection and iteration count differ from the paper. A fresh-machine installation has not been verified; re-evaluation using the existing environment was checked. The inspected test tasks should become regression cases for future tuning, with a fresh holdout for generalization. I will now demonstrate artifact integrity, a network-disabled regression and a compact view of the measured results.
+The package contains pinned scripts and configs, task hashes, real request ledgers, saved trees and independent plan checks. All three analyses can be recomputed from supplied files. The model, sample selection and iteration count differ from the paper. A fresh-machine installation has not been verified; re-evaluation using the existing environment was checked. The inspected test tasks should become regression cases for future tuning, with a fresh holdout for generalization. I will now replay a successful recorded plan and a branch that was closed by cycle pruning. Every displayed action was independently replayed and checked against its logged state.
 
-9:50-11:20 | Terminal | Offline demonstration (90 seconds)
-Preparation only, before recording: enter the existing Project2 working directory. Use New Share to select the terminal window. Do not read the command text aloud.
+9:50-11:50 | Browser | Recorded BlocksWorld replay (two minutes)
+Before recording, run python3 submission/build_replay_demo.py in the existing project root, then open output/replay/lits-replay.html in a browser. Use New Share to select that browser window. The file is self-contained and does not need a model connection.
 
-9:50-10:10 - Artifact integrity
-Command in the existing Project2 workspace:
-    python3 submission/github_ready/verify_distribution.py --release
-Say: "The distributed files match their recorded hashes. This check only reads local files."
-Expected output: ok: true; model_api_calls: 0.
-For a fresh clone that has already been installed, use python3 verify_distribution.py --release instead.
+9:50-10:05 - Establish the source
+Say: "This is an offline replay of a real recorded LiTS run; no new search or model call is being performed. The task, arm and historical whole-task request count are shown here."
 
-10:10-10:35 - Cycle-pruning regression
-Command:
-    .venv/bin/python scripts/check_cycle_pruning.py
-Say: "These are offline regression fixtures, separate from the measured model runs. They check ancestor-cycle handling without making model requests."
-Expected output: Cycle pruning regressions passed; network disabled; paid API calls: 0.
+10:05-10:55 - A successful pruned run
+Choose "Pruned search succeeds | instance-35". Point to the initial tower and the goal Yellow on Orange. Use Next to show the six recorded actions, pausing at the held-block state and the final goal.
+Say: "Each action is replayed under independent BlocksWorld rules and checked against the logged state. At the final step, yellow is on orange and the goal is satisfied."
 
-10:35-11:20 - Measured results
-Command:
-    python3 submission/show_recording_results.py
-Say: "This table reads saved experiment summaries. Control succeeds on seven, seven and ten tasks; pruning succeeds on eight, nine and eight. Calls fall from 3333 to 2176, but accuracy differences change sign. The separate development pilot solves one task in each arm."
-Expected totals: 24/60 vs 25/60; calls 3333 vs 2176; estimated-fee reduction 34.1%.
-Return to the PDF using New Share. If a command takes more than 15 seconds, move on and show the previously saved genuine rehearsal output, labeling it as a pre-recording check.
+10:55-11:35 - An actual closed cycle
+Choose "Pruned branch closes a cycle | instance-69". Advance to step 3, node 7: blue is held, and orange, red and yellow are on the table. Advance to step 4, which stacks blue on orange, then step 5, which unstacks blue again. Point to the red link from node 9 back to node 7 and the CLOSED label.
+Say: "This repeated state matches an ancestor and is closed by cycle pruning. The goal is still unmet. Detecting a cycle does not automatically supply the missing useful action or guarantee a solution."
+The optional "Control solution | instance-69" shows the same task's independently sampled successful control path. Do not claim this one case proves a causal accuracy effect.
 
-11:20-12:15 | Page 8 | Lessons and conclusion
+11:35-11:50 - Connect the mechanism to the main result
+Say: "These selected paths illustrate behavior. The accuracy and resource conclusions still come from the three repeated twenty-task comparisons. Calls decrease, while the accuracy difference changes sign."
+Return to page 8 using New Share.
+
+11:50-12:45 | Page 8 | Lessons and conclusion
 Three lessons stand out. First, terminal text and independent action validity are different claims. Second, a cost-saving stopping rule can also reduce exploration, so realized computation must be measured. Third, adding a candidate does not guarantee it will be selected: scoring and tie-breaking remain important.
 My overall conclusion is a partial workflow reproduction under explicit model and budget departures. Ancestor-cycle pruning consistently reduces calls on these tasks, while accuracy benefits remain uncertain. The next research step would separate candidate selection, bounded recovery and failure backup into individual ablations, validated on development tasks and a fresh holdout. Thank you.
 
-12:15-12:30 | Stop recording
+12:45-13:00 | Stop recording
 Pause for a second after "Thank you", then stop the recording. Do not read this instruction aloud.
 
 Recording checklist
 - Start a Zoom recording, share the report and optionally the local terminal.
 - Read the numbers from the verified report; do not substitute the paper's metric for your own.
-- Rehearse to about 12:30. At 13:30, use the three conclusion sentences and stop by 14:00; keep the final file below 15 minutes.
+- Rehearse to about 13:00. At 13:30, use the three conclusion sentences and stop by 14:00; keep the final file below 15 minutes.
 - Upload to a location accessible to the instructor; check link permissions and supply the real link.
+
+Optional pre-recording checks or backup evidence (not the main visual demonstration)
+Existing Project2 workspace:
+    python3 submission/github_ready/verify_distribution.py --release
+    .venv/bin/python scripts/check_cycle_pruning.py
+    python3 submission/show_recording_results.py
+For an already-installed fresh clone, use python3 verify_distribution.py --release for the first command.

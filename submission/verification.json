@@ -56,5 +56,23 @@
     "Network-disabled cycle regression passed in existing Project2 environment",
     "Compact saved-results display matches main/pilot summaries",
     "Round-three offline audit: 3 losses, 8 real cycles, 0 replay errors"
-  ]
+  ],
+  "visual_replay": {
+    "examples": 3,
+    "source": "measured round-three trajectories",
+    "new_model_calls": 0,
+    "new_search_runs": 0,
+    "all_displayed_actions_legal": true,
+    "modeled_positions_match_replay": true,
+    "cycle_node": 9,
+    "cycle_ancestor_node": 7,
+    "cycle_ancestor_step": 3,
+    "closed_cycle_step": 5,
+    "browser_checks": [
+      "successful pruned trajectory reaches goal at step6",
+      "control instance-69 reaches both goals at step6",
+      "pruned instance-69 node9 matches ancestor7 and is closed at step5",
+      "Previous/Next, case selection and autoplay checked"
+    ]
+  }
 }

@@ -17,7 +17,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "966b1f506c1b271b3c84dce6708a1a2739c38d00e7c7e1d0b8a796c485abd8d1"
+      "sha256": "0443bf9fd9dc9359976359bddedf4116bdd1945a55a96ee4d865c05e6d479998"
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
@@ -66,6 +66,14 @@
     {
       "path": "output/pdf/LiTS_Reproducibility_Report.pdf",
       "sha256": "b3e2e22a44518ea4bb638a96b02e742df2191229e5be1568e81b133c331a2185"
+    },
+    {
+      "path": "output/replay/lits-replay.html",
+      "sha256": "53b353eebe8577c8633b402bebc32a76ac3bcfdd3847322cf1f3dd88bbaddcc0"
+    },
+    {
+      "path": "output/replay/replay_data.json",
+      "sha256": "4b340755862e79e3284729f57d95bd95c6885126db8cf4480f45ef98236edb1a"
     },
     {
       "path": "reports/api_guard_check.json",
@@ -4084,6 +4092,14 @@
       "sha256": "d65489cf5cb647f6acbf503a3a8aa4d39b21f50c1af76291a76475a64bb4bb47"
     },
     {
+      "path": "submission/build_replay_data.py",
+      "sha256": "55ea70523eb84f3f4e19cf41c528b9245b778290d56b001d6bbd1fcbf27aaad6"
+    },
+    {
+      "path": "submission/build_replay_demo.py",
+      "sha256": "9a529e503b2945f49dc9a009cbc298106c999e93a951cfb2aa95e1a4f6ec6c4b"
+    },
+    {
       "path": "submission/build_report.py",
       "sha256": "1b3545618e19c5785e1892b0734b737380f3ad8b99f37a8d3c593a165c92ff48"
     },
@@ -4093,7 +4109,11 @@
     },
     {
       "path": "submission/recording_script_en.txt",
-      "sha256": "a6cb6eb8a115439f84c4fd292c009d678f1783ef21df05f5d3313af29eb5a8a6"
+      "sha256": "9836f18343298a36463eba6ee59f7df027e46a418c214481371b5a2644336d9e"
+    },
+    {
+      "path": "submission/replay_demo_template.html",
+      "sha256": "8bcaeb02851507b609e92cbcb4b0953b34700fe1c31d4a6bd657344e022b3a7c"
     },
     {
       "path": "submission/report_text.txt",
@@ -4109,11 +4129,11 @@
     },
     {
       "path": "submission/submission_checklist.txt",
-      "sha256": "3f9e250bed5109bc69250f3ee9c34928f7a5a28f786ab12e14ddbf9980a5900e"
+      "sha256": "6dcee427a7928108be2f938271cbfd7b98b4db7ba1988b27d88b5323d22fd4ef"
     },
     {
       "path": "submission/verification.json",
-      "sha256": "e2572a146e8bed685b672ed2b290c36264d28c0a8073f2af82b66720ef428429"
+      "sha256": "a27dd293ecea5a6ed642f542b1a37673edb6bfdf2eae5671341368a0bc5ecbb3"
     },
     {
       "path": "submission_setup.sh",
